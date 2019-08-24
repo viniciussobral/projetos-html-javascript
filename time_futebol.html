@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Meu time</title>
+</head>
+<body>
+     
+   <p><h2>Pagina de times com mundiais</h2></p> 
+
+   <p>Informe o time que você torce:
+    <input id="time"></p> 
+
+   <p>Informe quantos mundiais da FIFA o seu time tem:
+    <input id="mundial"></p> 
+
+    
+   <p><button onclick="fifa()" >Eu amo meu time!</button></p>   
+
+   <p><button onclick="limpar()" > Limpar os campos</button></p> 
+
+
+
+</body>
+</html>
+
+<script>
+
+     function fifa (){
+
+          var time1 = time.value;
+          var mundial1 = mundial.value;
+
+          alert(`O ${time1} tem ${mundial1} Mundiais da FIFA`);
+
+     }
+
+
+     function limpar() {
+ if(document.getElementById('time').value!="") {
+  document.getElementById('time').value="";
+  document.getElementById('mundial').value="";
+}
+} 
+
+
+</script>
