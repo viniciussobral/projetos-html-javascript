@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exe 4</title>
+</head>
+
+<body>
+
+    <button onclick="ver_numeros()">Números Cabalisticos</button>
+    <br>
+    <span id="num"></span>
+
+
+
+
+
+
+
+</body>
+
+</html>
+
+<script>
+
+    function ver_numeros() {
+
+        var contador = 1;
+        num.innerHTML = "";
+
+        while(contador <= 15){
+
+            if(contador != 3 && contador != 4 && contador != 7 && contador != 10 && contador != 12 ){
+
+                num.innerHTML += `${contador} <br>`;
+
+
+            }
+
+            contador++;
+        }
+
+
+
+
+
+
+    }
+
+
+
+</script>

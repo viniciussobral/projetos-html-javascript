@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+
+Lista Suspensa ou "combo box":
+<br><br>
+<select id="frutas" onchange="vervalor()"> 
+    <option>- Escolha uma fruta - </option> <!--Onchange colocar o valor setado como o onclick-->
+    <option value="1">Abacate</option>
+    <option value="2">Abacaxi</option>
+    <option value="3">Morango</option>
+    <option value="4">Pêra</option>
+ 
+ </select> 
+
+<button onclick="vervalor()">Ver valor real</button>
+
+
+
+</body>
+</html>
+
+<script>
+
+function vervalor(){
+
+alert(`Valor real da combo: ${frutas.value}`); 
+
+
+
+
+}
+
+
+
+</script>

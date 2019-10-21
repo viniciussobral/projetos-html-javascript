@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Descontos</title>
+</head>
+<body>
+    
+
+
+
+    <h1>Descontos</h1>
+
+   <p>Digite o seu salário:
+    <input id="salario"> </p> 
+
+    <select name="" id="descontos">
+        <option>-Ver Desconto-</option>
+        <option value="0.1">INSS</option>
+        <option value="0.2">IR</option>
+        <option value="0.05">VT</option>
+
+    </select>
+
+    <br>
+    <br>
+
+    <div id="msn" style="display: none">
+    
+            Valor desse desconto é: R$ <span id="ver"></span>
+             Salario Atual em: R$ <span id="versaldo"></span>
+    
+    </div>
+ <br>
+    <button onclick="calcular()">Ver Desconto</button>
+
+
+</body>
+</html>
+
+<script>
+
+
+
+function calcular(){
+
+var desconto = Number(descontos.value);
+var salario1 = Number(salario.value);
+var total =  salario1 * desconto;
+var saldo = salario1 - total ;
+
+
+
+
+
+
+versaldo.innerHTML = saldo.toFixed(2);
+ver.innerHTML = total.toFixed(2);
+
+
+
+msn.style.display = "block";
+
+
+
+    
+}
+
+
+</script>

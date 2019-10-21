@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pizzas</title>
+</head>
+<body>
+     
+   <p><h2>Pizzas</h2></p> 
+
+   <p>Digite o valor da pizza:
+    <input type="text" id="valor" autofocus></p> 
+
+  <p>Digite a quantidade de amigos que vão dividir o valor da pizza:
+    <input type="text" id="amigos">
+</p>  
+
+   <p><button onclick="divisao()">#lovePizza</button></p>
+   <button onclick="limpar()" >Limpar campos</button> 
+
+
+</body>
+</html>
+
+
+<script>
+    
+    function divisao(){
+
+      var dividir = valor.value / amigos.value;
+                                                        // toFixed(2) coloca apenas dois números depois da virgula.
+      alert(`Cada um dos ${amigos.value} amigos vai pagar ${dividir.toFixed(2)} R$. `)
+
+    }
+
+
+    function limpar(){
+        // && valor.autofocus
+   if(document.getElementById('valor').value!=""){
+   (document.getElementById('valor').value="");
+   (document.getElementById('amigos').value="");
+    
+
+ }
+
+}
+
+
+</script>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+
+      <h2>Cofre tio Patinhas</h2>
+
+     <p style="color: blue">  Total guardado no cofrinho:  <u> R$  </u> <span id="mostrar_valor"> 0.00 </span></p> 
+
+     <p style="color: blue"> Depósitos efetuados:  <span id="mostrar_deposito"><u> 0 </u></span></p> 
+
+     <button onclick="cents_50()">Depositar 0,50</button>
+     <button onclick="two_dolares()">Depositar 2,00</button>
+
+
+</body>
+</html>
+
+<script>
+
+    var valor = 0;
+    var depositar = 0;
+  
+
+function cents_50(){
+
+    valor += 0.50;
+    depositar += 1;
+    mostrar_valor.innerHTML = valor;
+    mostrar_deposito.innerHTML = depositar;
+
+
+
+}
+
+
+function two_dolares(){
+
+    valor += 2.00;
+    depositar += 1;
+    mostrar_valor.innerHTML = valor;
+    mostrar_deposito.innerHTML = depositar;
+
+}
+
+
+
+
+
+
+</script>

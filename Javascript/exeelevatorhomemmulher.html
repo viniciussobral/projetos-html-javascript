@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Elevador Homens e Mulheres</title>
+</head>
+<body>
+  
+    
+   <p> Informe a quantidade de Homens no elevador:
+        <input type="text" id="homem"></p>
+
+   <p> Informe a quantidade de Mulheres no elevador:
+        <input type="text" id="mulher"></p>
+
+    <button onclick="peso()">Ligar elevador</button>
+
+</body>
+</html>
+
+<script>
+
+function peso(){
+
+var quant_h = Number(homem.value);
+var quant_m = Number(mulher.value);
+var total_h = quant_h * 90;
+var total_m = quant_m * 70;
+var total_peso = total_h + total_m;
+var ultrapassou = total_peso - 500;
+
+if(total_peso < 500){
+
+    alert(`O elevador vai ser mover pois tem: ${total_peso} Kg`);
+}
+else{
+
+    alert(`Alguém vai ter que descer pois ultrapassou: ${ultrapassou} Kg`);
+
+}
+
+
+
+}
+
+
+
+</script>

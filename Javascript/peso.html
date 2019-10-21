@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p> Informe a quantidade de pães franceses consumidos:
+        <input type="text" id="pf">
+    </p>
+
+    <p>Informe a quantidade de casquinhas consumidas:
+        <input type="text" id="c">
+    </p>
+
+    <p>
+            Informe a quantidade de Minutos de caminhada:
+            <input type="text" id="cami">
+    </p>
+
+    <p>
+            Informe a quantidade de minutos de musculação:
+            <input type="text" id="musc">
+    </p>
+
+    <button onclick="verao()">Projeto Verão</button>
+</body>
+</html>
+
+
+<script>
+
+function verao(){
+ var pf1 = pf.value;
+ var c1 = c.value;
+ var cami1 = cami.value;
+ var musc1 = musc.value;
+ var pf1 = 100;
+ var c1 = 300;
+ var cami1 = - 50;
+ var musc1 = -30;
+ var caloria = pf1 + c1;
+ var queima = cami1 + musc1;
+ var total = caloria - queima;
+
+ alert(`Entre calorias que ganhou e perdeu, seu saldo de calorias no dia é de ${total}`);
+
+
+
+
+}
+
+</script>

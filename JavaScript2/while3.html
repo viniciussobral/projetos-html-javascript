@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+
+   <p>Informe um número: <input type="text" id="numero"></p> 
+   <p>Digite uma frase: <input type="text" id="frase"></p> 
+
+   <button onclick="mostrar()">Papagaio</button>
+
+
+</body>
+</html>
+
+<script>
+
+    function mostrar(){
+       
+        var contador = 1;
+        var valor_frase = frase.value;
+    
+        while( contador <= Number(numero.value)){
+
+            alert(`${valor_frase} , e contador ${contador}`);
+
+            contador++;
+
+        }
+
+    
+    }
+
+
+
+
+</script>

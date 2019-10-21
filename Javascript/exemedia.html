@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Média Escolar</title>
+</head>
+<body>
+    
+    <h2>Média Aluno</h2>
+
+   <p>Informe a 1° nota:
+        <input type="text" id="n1">
+    </p> 
+    
+   <p>Informe a 2° nota:
+        <input type="text" id="n2">
+    </p> 
+
+    <button onclick="situacao()">Verficar Situação</button>
+
+
+
+</body>
+</html>
+
+<script>
+
+    function situacao(){
+
+        var nota1 = Number(n1.value);
+        var nota2 = Number(n2.value);
+        var media = (nota1 + nota2) / 2;
+
+        if(media >=5){
+
+            alert(`Parabéns Aprovado! Sua média foi: ${media}`);
+        }
+        else{
+
+            alert(`Tente outra vez... Sua média foi: ${media}`);
+        }
+    }
+
+
+
+</script>

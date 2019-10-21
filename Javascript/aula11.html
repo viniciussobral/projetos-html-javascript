@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+   <p>1º Número: <input type="text" id="n1"></p> 
+   <p> 2º Número: <input type="text" id="n2"></p>
+
+    <button onclick="cacular()">Calcular</button>
+
+    <div id="msn1"></div>
+    <div id="msn2"></div>
+    <div id="msn3"></div>
+    <div id="msn4"></div>
+
+</body>
+</html>
+
+<script>
+
+function calcular(){
+
+var soma = Number(n1.value) + Number(n2.value);
+var sub = Number(n1.value) - Number(n2.value);
+var divi = Number(n1.value) / Number(n2.value);
+var mult = Number(n1.value) * Number(n2.value);
+
+msn1.innerHTML = ` O Resultado da soma é: ${soma}`;
+msn2.innerHTML = ` O Resultado da soma é: ${sub}`;
+msn3.innerHTML = ` O Resultado da soma é: ${divi}`;
+msn4.innerHTML = ` O Resultado da soma é: ${mult}`;
+
+
+
+
+
+}
+
+</script>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Permissão Festa</title>
+</head>
+<body>
+    
+     <h2>Permissão</h2>
+
+    Informe sua idade:
+   <input id="idade">
+   <br><br>
+
+   <button onclick="festa()">Ir para a festa</button>
+
+
+</body>
+</html>
+
+<script>
+
+function festa(){
+
+var idade1 = Number(idade.value);
+
+
+    // simbolo de menor < esquerda e de maior > direita
+    if(idade1 < 18){
+
+     alert(`Pedir permissão para o responsável`);
+
+       if(idade1 < 15){
+
+        alert(`Sem chance vai estudar!`);
+
+       }
+
+    }
+
+     if(idade1 >= 15){
+
+    alert(`#PartiuFesta`);
+
+   }
+    
+  
+
+
+}
+
+</script>

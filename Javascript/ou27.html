@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <select name="" id="alimentos">
+        <option>-Escolha o Alimento-</option>
+        <option value="c">Carne bovina</option>
+        <option value="s">Soja</option>
+        <option value="c">Carne suina</option>
+        <option value="l">Legumes</option>
+        <option value="c">Carne de peixe</option>
+        <option value="f">Frutas</option>
+        <option value="o">Ovos</option>
+
+    </select>
+
+    <button onclick="ver_alimentos()">Tipo de alimentação</button>
+
+</body>
+
+</html>
+
+<script>
+
+    function ver_alimentos() {
+
+        var valor_alimentos = (alimentos.value);
+
+        if (valor_alimentos == "c" || valor_alimentos == "o") {
+
+            alert(`Você não pode ser Vegano`);
+
+
+        }
+
+        if (valor_alimentos == "s" || valor_alimentos == "l" || valor_alimentos == "f") {
+
+            alert(`Você pode ser Vegano`);
+
+        }
+
+        if (valor_alimentos == "s" || valor_alimentos == "l" || valor_alimentos == "f" || valor_alimentos == "o") {
+
+            alert(`Você pode ser Vegetariano`);
+
+        }
+
+
+
+
+    }
+
+
+</script>

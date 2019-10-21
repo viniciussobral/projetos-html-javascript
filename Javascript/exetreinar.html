@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+
+    <img src="lutador.gif" alt="" id="foto1" height="300px">
+    <br>
+    <div style="width: 300px; background-color: crimson; height: 25px" id="barra1" ></div>
+    <br>
+    <button onclick="lutador1()" id="btn1">Apanhar</button>
+    <br>
+    <b id="msn1"></b>
+    <br>
+    <img src="lutador2.gif" alt="" id="foto2" height="300px">
+    <br>
+    <div style="width: 300px; background-color: dodgerblue ; height: 25px" id="barra2" ></div>
+    <br>
+    <button onclick="lutador2()" id="btn2">Apanhar</button>
+    <br>
+    <b id="msn2"></b>
+  
+
+
+</body>
+</html>
+
+<script>
+var vida1 = 300;
+var vida2 = 300;
+
+function  lutador1(){
+vida1 -= 25;
+
+barra1.style.width = `${vida1}px`;
+validar();
+
+}
+
+function  lutador2(){
+vida2 -= 25;
+
+barra2.style.width = `${vida2}px`;
+validar();
+
+}
+
+function validar(){
+  
+   if(vida1 ==0){
+
+       foto1.src = "moreu.jpg";
+       msn1.innerHTML = "KYO MORREU!";
+       btn1.style.display = "none";
+
+   }
+
+   if(vida2 ==0){
+
+   foto2.src = "moreu.jpg";
+   msn2.innerHTML = "LEONA MORREU!";
+   btn2.style.display = "none";
+
+
+  }
+
+}
+
+
+
+</script>

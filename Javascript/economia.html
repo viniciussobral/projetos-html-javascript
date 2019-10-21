@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+      Quanto você pretende guardar mensalmente ?
+     <input type="number" id="economia">
+
+     <div id="casa" style="color:blue "></div>
+     <div id="carro" style="color:blue"></div>
+     <div id="viagem" style="color:blue"></div>
+
+     <button onclick="calcular()">Ver economia</button>
+
+</body>
+</html>
+
+<script>
+
+function calcular(){
+    var calc1 = 300000 / economia.value;
+    var calc2 = 20000/ economia.value;
+    var calc3 = 80000/  economia.value;
+    var calc_ano1 = calc1/12;
+    var calc_ano2 = calc2/12;
+    var calc_ano3 = calc3/12;
+
+    var casa1 = `Você guardando ${economia.value}R$ você irá comprar uma casa de 300 Mil em ${calc1.toFixed(0)} Meses Ou seja ${calc_ano1.toFixed(1)} Anos`;
+    var carro1 = `Você guardando ${economia.value}R$ você irá comprar um carro de 20 Mil em ${calc2.toFixed(0)} Meses Ou seja ${calc_ano2.toFixed(1)} Anos`;
+    var viagem1 = `Você guardando ${economia.value}R$ você irá fazer uma viagem de 80 Mil em ${calc3.toFixed(0)} Meses Ou seja ${calc_ano3.toFixed(1)} Anos`;
+
+    casa.innerHTML = casa1;
+    carro.innerHTML = carro1;
+    viagem.innerHTML = viagem1;
+
+
+
+
+}
+
+
+</script>

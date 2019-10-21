@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exe 9 and 12 </title>
+</head>
+
+<body>
+ 
+    <p>Informe a quantidade de passageiros: <input type="text" id="passageiros"></p>
+    <p>Informe a capacidade de passageiros que o veículo suporta: <input type="text" id="suporta"></p>
+
+
+    <button onclick="ver_passageiros()">#Partiu Carona</button>
+    <br>
+    <div id="num"></div>
+    <br>
+    <div id="num2"></div>
+
+
+
+</body>
+
+</html>
+
+
+<script>
+
+    function ver_passageiros() {
+
+        var valor_passageiros = Number(passageiros.value);
+        var valor_suporta = Number(suporta.value);
+        var contador = 1;
+        num.innerHTML = "";
+
+
+
+        while (contador <= valor_passageiros) {
+
+
+            if (contador <= valor_suporta) {
+
+                num.innerHTML += `<b> Entrou o ${contador}º passageiro <b/>`;
+
+                if (contador == 1) {
+
+                    num.innerHTML += `<b> (que é o(a) motorista) <b/>`;
+
+
+
+                }
+
+            } else {
+
+                num.innerHTML += `<b> O ${contador}º passageiro terá que esperar! <b/>`;
+
+
+            }
+
+
+            num.innerHTML += `<br>`;
+            contador++;
+
+
+        }
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+</script>

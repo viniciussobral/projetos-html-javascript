@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    Vida do Lutador: <b id="vida_lutador"> 1000</b> 
+    <br><br>
+   <b id="msn"></b> 
+
+<button id="btn1" onclick="apanhar()">Apanhar</button>
+<button id="btn2" onclick="forca()">Concentrar Força</button>
+
+   
+    
+</body>
+</html>
+
+<script>
+
+vida = 1000;
+
+function apanhar(){
+vida -= 100;
+vida_lutador.innerHTML = vida;
+lutador()
+
+}
+
+function forca(){
+vida += 10;
+vida_lutador.innerHTML = vida;
+lutador()
+
+}
+
+function lutador(){
+
+if(vida > 0 ){
+
+msn.innerHTML = `Lutador ainda está vivo!`;
+
+}
+else{
+
+    msn.innerHTML = `Lutador Já era!`;
+    btn1.disabled = true;
+    btn2.disabled = true;
+}
+
+}
+
+
+</script>

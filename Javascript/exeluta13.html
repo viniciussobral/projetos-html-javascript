@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <img src="lutador.gif" alt="" id="luta1"  height="300px">
+    <br>
+    <div id="barra1" style="width: 300px; background-color: red; height: 25px">
+    </div>
+    <button onclick="lutador1()" id="btn1">Apanhar</button>
+    <span id="msn1"></span>
+    <br>
+    <img src="lutador2.gif" alt="" id="luta2" height="300px">
+    <br>
+    <div id="barra2" style="width: 300px; background-color: rgb(21, 167, 211); height: 25px">
+    </div>
+    <span id="msn2"></span>
+    <button onclick="lutador2()" id="btn2">Apanhar</button>
+
+
+
+</body>
+</html>
+
+<script>
+    var vida1 = 300;
+    var vida2 = 300;
+function lutador1(){
+
+    vida1 -= 25;
+   barra1.style.width = `${vida1}px`;
+
+
+    validar();
+
+  
+
+    
+
+}
+
+function lutador2(){
+    vida2 -= 25;
+    barra2.style.width = `${vida2}px`;
+
+    validar();
+}
+
+function validar(){
+
+
+if(vida1 ==0 ){
+
+    luta1.src = `moreu.jpg `;
+    btn1.style.display = "none";
+    msn1.innerHTML = `Leona Venceu`;
+
+
+
+
+}
+
+if(vida2 ==0 ){
+
+luta2.src = `moreu.jpg`;
+btn2.style.display = "none";
+msn2.innerHTML = `kyo Venceu`;
+
+
+
+}
+
+
+}
+
+
+</script>

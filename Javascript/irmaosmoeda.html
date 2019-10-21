@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+     
+    <p>
+        Huguinho, quantas moedas você depositou?
+        <input type="text" id="h" autofocus>
+    </p>
+    <p>
+        Zezinho, quantas moedas você depositou?
+            <input type="text" id="z">
+     </p>
+    <p>
+                Luizinho, quantas moedas você depositou?
+                <input type="text" id="l">
+        </p>
+
+<button onclick="porco()">Quebra esse porquinho</button>
+
+</body>
+</html>
+
+<script>
+    function porco () {
+
+        var h1 = h.value;
+        var z1 = z.value;
+        var l1 = l.value;
+        var ht= h1 *0.5;
+        var zt= z1 *0.5;
+        var lt= l1 *0.5;
+
+        alert (`O Huguinho economizou R$ ${ht.toFixed(2)} pois fez ${h1} depósitos`);
+        alert (`O Zezinho economizou R$ ${zt.toFixed(2)} pois fez ${z1} depósitos`);
+        alert (`O Luizinho economizou R$ ${lt.toFixed(2)} pois fez ${l1} depósitos`);
+    }
+
+</script>

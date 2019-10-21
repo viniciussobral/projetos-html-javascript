@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+
+   <p>Informe uma frase qualquer: <input type="text" id="frase" onkeyup="verificar()"></p>
+   A primeira letra é:<b id="comeco"></b><br><br>
+   A ultima letra é: <b id="final"></b>
+
+   
+
+
+
+</body>
+</html>
+
+<script>
+
+    function verificar(){
+
+
+      comeco.innerHTML = frase.value[0];     
+
+      final.innerHTML = frase.value[frase.value.length-1];
+    
+
+
+
+    }
+
+
+
+
+</script>
+

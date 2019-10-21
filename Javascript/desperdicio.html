@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Despedicio</title>
+</head>
+<body>
+   <p>Informe quantos minutos a 1º Torneira ficou pingando:
+    <input type="text" id="torn1"></p> 
+
+   <p>Informe quantos minutos a 2º Torneira ficou pingando:
+    <input type="text" id="torn2"></p> 
+
+   <p>Informe quantos minutos a 3º Torneira ficou pingando:
+    <input type="text" id="torn3"></p> 
+
+    <button onclick="calculo()">Ver desperdicio</button>
+
+
+</body>
+</html>
+
+<script>
+    
+    function calculo(){
+
+    var t1 = torn1.value;
+    var t2 = torn2.value;
+    var t3 = torn3.value;
+    var d1 = t1 * 15;
+    var d2 = t2 * 15;
+    var d3 = t3 * 15;
+    var td = d1 + d2 + d3;
+
+    alert(`Suas 3 torneiras, juntas, desperdiçaram ${td} litros de água`);
+
+    }
+    
+    
+    </script>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Endereco</title>
+</head>
+<body>
+     
+   <p><h2>Meu Endereço</h2></p> 
+
+   <p>Informe o nome da Sua RUA, AVENIDA OU VILA:
+    <input id="rua"></p> 
+
+    <p>
+        Informe o número da sua casa:
+        <input id="numero">
+    </p>
+
+   <p><button onclick="logradoro()">Onde eu Moro</button></p> 
+   <p><button onclick="limpar()">Limpar os Campos</button></p> 
+
+
+
+
+</body>
+</html>
+
+<script>
+
+    function logradoro(){
+
+      var rua1=rua.value;
+      var numero1= numero.value;
+
+      alert(`A Rua principal que você mora é: ${rua1} . E o número da sua casa é: ${numero1}`);
+
+
+    }
+
+
+    function limpar() {
+   if(document.getElementById('rua').value!="") {
+     document.getElementById('rua').value="";
+     document.getElementById('numero').value="";
+     }
+  } 
+
+
+
+
+</script>

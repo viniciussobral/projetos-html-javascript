@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p>Informe quantos torcedores do Guarani você vai ajudar: <input type="text" id="guarani"> </p>
+    <p>Informe quantos torcedores da Ponte Preta você vai ajudar: <input type="text" id="ponte"> </p>
+
+    <p>Informe o preço da camisa do Guarani: <input type="text" id="camisa_guarani"> </p>
+    <p>Informe o preço da camisa da Ponte Preta: <input type="text" id="camisa_ponte"> </p>
+
+    <button onclick="ver_camisas()">Criança feliz</button>
+    <br>
+    <span id="mostrar"></span>
+    <span id="mostrar2"></span>
+    <br>
+    <span id="mostrar3"></span>
+    <span id="mostrar4"></span>
+    <span id="mostrar5"></span>
+    <span id="mostrar6"></span>
+
+
+</body>
+
+</html>
+
+<script>
+
+    function ver_camisas() {
+
+        var qtd_guarani = Number(guarani.value);
+        var qtd_ponte = Number(ponte.value);
+        var preco_camisa_guarani = Number(camisa_guarani.value);
+        var preco_camisa_ponte = Number(camisa_ponte.value);
+        var sub_total_guarani = preco_camisa_guarani * qtd_guarani;
+        var sub_total_ponte = preco_camisa_ponte * qtd_ponte;
+        var total = sub_total_guarani + sub_total_ponte;
+        var contador1 = 1;
+        var contador2 = 1;
+        mostrar.innerHTML = "";
+        mostrar2.innerHTML = "";
+        mostrar3.innerHTML = "";
+        mostrar4.innerHTML = "";
+        mostrar5.innerHTML = "";
+        mostrar6.innerHTML = "";
+
+
+        if (qtd_guarani >= 0 && qtd_ponte >= 0) {
+
+            while (contador1 <= qtd_guarani) {
+
+                if (contador1 % 2 == 0) {
+
+                    mostrar.innerHTML += ` ${contador1}º torcedor do Guarani ganhando <br> <img src="./hulk.jpg" height="100px"> <br>`;
+                    contador1++;
+
+                } else {
+
+                    mostrar.innerHTML += ` ${contador1}º torcedor do Guarani ganhando <br> <img src="./hulk.jpg" height="100px"> <br>`;
+                    contador1++;
+
+
+                }
+
+            }
+
+            while (contador2 <= qtd_ponte) {
+
+                if (contador2 % 2 == 0) {
+
+                    mostrar2.innerHTML += ` ${contador2}º torcedor da Ponte Preta ganhando <br> <img src="./hulk.jpg" height="100px"> <br>`;
+                    contador2++;
+
+                } else {
+
+                    mostrar2.innerHTML += ` ${contador2}º torcedor da Ponte Preta ganhando <br> <img src="./hulk.jpg" height="100px"> <br>`;
+                    contador2++;
+
+                }
+            }
+            mostrar3.innerHTML = `<b>Subtotal com torcedores do Guarani: R$ ${sub_total_guarani.toFixed(2)}</b> <br>`;
+            mostrar4.innerHTML = `<b>Subtotal com torcedores da Ponte Preta: R$ ${sub_total_ponte.toFixed(2)}</b> <br>`;
+            mostrar5.innerHTML = `<b>Total: R$ ${total.toFixed(2)}</b><br>`;
+
+
+
+        } else {
+
+            mostrar2.innerHTML += `Onde já se viu quantidade negativa de torcedores?!. <br>`;
+
+
+        }
+
+
+
+        if (preco_camisa_guarani >= 2 && preco_camisa_ponte >= 2) {
+
+
+            if (sub_total_guarani > sub_total_ponte) {
+
+                mostrar6.innerHTML += ` <b> Você vai gastar mais com os torcedores do Guarani </b> <br>`;
+
+            }
+            if (sub_total_ponte > sub_total_guarani) {
+
+                mostrar6.innerHTML += `<b>Você vai gastar mais com os torcedores da Ponte Preta </b> <br>`;
+
+            }
+            if (sub_total_guarani == sub_total_ponte) {
+
+                mostrar6.innerHTML += ` <b>Você vai gastar o mesmo com ambos </b> <br>`;
+
+
+
+            }
+
+        } else {
+            mostrar2.innerHTML += ` Camisa desse preço é pirata!!!. <br> `;
+
+
+        }
+
+
+
+
+
+
+    }
+
+</script>

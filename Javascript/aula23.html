@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <h2>Como está o meu atendimento ?</h2>
+    <select name="" id="avaliacao">
+    
+        <option value="1">1 estrela</option>
+        <option value="2">2 estrelas</option>
+        <option value="3">3 estrelas</option>
+        <option value="4">4 estrelas</option>
+        <option value="5">5 estrelas</option>
+
+
+    </select>
+
+    <div id="media">
+
+            Média atual: <span id="med"> 0  </span> estrelas
+            <br>
+            Número de avaliações: <span id="avali"> 0  </span>
+    </div>
+ 
+    <button onclick="ver()">Votar</button>
+
+
+
+</body>
+</html>
+
+<script>
+
+ var contar = 0;
+ var estrela = 0;
+ var total = 0;
+
+function ver (){
+
+contar ++;
+total += Number (avaliacao.value);
+estrela = Number (total) / contar;
+
+
+med.innerHTML = estrela.toFixed(2);
+avali.innerHTML = contar;
+
+
+
+
+}
+
+
+</script>
+

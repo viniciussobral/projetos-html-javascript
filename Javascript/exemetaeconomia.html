@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Meta Economia</title>
+</head>
+<body>
+    
+
+   <p>
+        Qual a sua meta de economia ?
+        <input type="text" id="economia">
+    </p>
+    
+    <p>
+            Quanto você tem guardado ?
+            <input type="text" id="guardado">
+    </p> 
+
+    <button onclick="analisar()">Analisar economia</button>
+
+    <div id="msn"></div>
+
+</body>
+</html>
+
+<script>
+
+function analisar(){
+
+var meta = Number(economia.value);
+var valor_guardado = Number(guardado.value);
+var total_meta = meta - valor_guardado;
+
+
+if(total_meta <= 0){
+
+    msn.innerHTML = `<b> Parabéns você atingiu sua meta! </b>`
+
+
+}
+if(total_meta < 0){
+
+msn.innerHTML = `<b> Parabéns meta ultrapassada! </b>`
+
+
+}
+if(total_meta > 0){
+
+msn.innerHTML = `<b> Força! Ainda em busca da meta! Falta ${total_meta} R$ </b> `
+
+
+}
+
+
+
+
+}
+
+</script>
+

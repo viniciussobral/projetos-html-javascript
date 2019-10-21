@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+    <p>
+        Informe sua idade: <input type="text" id="idade" onkeyup="ver_idade()">
+    </p>
+
+    <span id="msn"></span>
+
+
+
+
+
+
+
+</body>
+
+</html>
+
+<script>
+
+    function ver_idade() {
+
+        var valor_idade = Number(idade.value);
+        var contador = 0;
+        msn.innerHTML = "";
+
+        while (contador <= valor_idade) {
+
+            if (contador <= 4) {
+
+                msn.innerHTML += `${contador} anos (Primeira Infância) <br>`;
+              
+
+
+            }
+
+            if (contador > 4 && contador <= 6) {
+
+                msn.innerHTML += `${contador} anos (Pré-escolar) <br>`;
+           
+
+
+            }
+
+            if(contador > 6 && contador <= 10){
+
+                msn.innerHTML += `${contador} anos (Segunda Infância) <br>`;
+                
+
+            }
+            if(contador > 10 && contador <= 18){
+
+                msn.innerHTML += `${contador} anos (Adolescência) <br>`;
+
+
+            }
+            if(contador > 18 && contador <= 50){
+
+                msn.innerHTML += `${contador} anos (Adulto) <br>`;
+
+
+
+            }
+            if(contador > 50 && contador <=100){
+
+                msn.innerHTML += `${contador} anos (Melhor Idade) <br>`;
+
+
+            }
+            if(contador > 100){
+
+                msn.innerHTML += `${contador} anos (Matusalém) <br>`;
+
+
+            }
+
+            contador++;
+
+
+
+
+
+
+        }
+
+
+
+
+
+    }
+
+
+
+</script>

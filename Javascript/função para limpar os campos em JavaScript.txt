@@ -1,0 +1,9 @@
+ function limpar (){
+ if(document.getElementById('campo1').value!=""){
+     document.getElementById('campo1').value="";
+     document.getElementById('campo2').value="";
+     document.getElementById('campo3').value="";
+
+
+    }
+  }

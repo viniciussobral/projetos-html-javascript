@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exe 5</title>
+</head>
+
+<body>
+
+    <p>Informe a Quantidade de Mundiais FIFA o seu clube tem: <input type="text" id="mundial"></p>
+    <p><button onclick="ver_trofeus()">Ver troféus de mundiais FIFA</button></p>
+    <span id="image"></span>
+    <img src="" alt="">
+
+
+
+
+
+</body>
+
+</html>
+
+<script>
+
+    function ver_trofeus() {
+
+        var valor_mundial = Number(mundial.value);
+        var contador = 1;
+        image.innerHTML = "";
+
+
+        if (valor_mundial > 0) {
+
+            while (contador <= valor_mundial) {
+
+                image.innerHTML += `Menino ganhando hulk <img src="trofeu.png" style="height: 200px;">`;
+                contador++;
+            }
+
+        } else {
+
+            image.innerHTML = `<img src="torcedor.jpg" style="height: 200px;">`;
+
+        }
+
+
+
+
+
+
+
+    }
+
+
+</script>

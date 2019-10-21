@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+    <p>Informe a quantidade de meninos que voce vai ajudar
+        <input type="text" id="meninos"></p>
+
+    <p>Informe a quantidade de meninas que voce vai ajudar
+        <input type="text" id="meninas"></p>
+
+    <p>Informe o preço do brinquedo de meninos
+        <input type="text" id="brinquedo_menino"></p>
+
+
+    <p>Informe o preço do brinquedo de meninas
+        <input type="text" id="brinquedo_menina"></p>
+
+    <p><button onclick="ver_presentes()">Brincadeira de Criança</button></p>
+
+    <div id="msn"></div>
+    <br>
+    <div id="msn2"></div>
+    <br>
+    <div id="msn3"></div>
+    <div id="msn4"></div>
+    <div id="msn5"></div>
+
+
+
+
+</body>
+
+</html>
+
+<script>
+
+    function ver_presentes() {
+
+        var qtd_meninos = Number(meninos.value);
+        var qtd_meninas = Number(meninas.value);
+        var preco_brinquedo_menino = Number(brinquedo_menino.value);
+        var preco_brinquedo_menina = Number(brinquedo_menina.value);
+        var subtotal_brinquedo_menino = preco_brinquedo_menino * qtd_meninos;
+        var subtotal_brinquedo_menina = preco_brinquedo_menina * qtd_meninas;
+        var total = (subtotal_brinquedo_menino) + (subtotal_brinquedo_menina);
+        var contador = 1;
+        var contador2 = 1;
+        msn.innerHTML = "";
+        msn2.innerHTML = "";
+
+
+
+        if (qtd_meninos >= 0 && qtd_meninas >= 0) {
+
+            while (contador <= qtd_meninos) {
+
+                if (contador % 2 == 0) {
+
+                    msn.innerHTML += ` <b>${contador}º menino ganhando um <br> <img src="./thor.jpg" height="150px"></b> <br>`;
+
+                    contador++;
+
+
+                } else {
+
+                    msn.innerHTML += ` <b>${contador}º menino ganhando um <br> <img src="./hulk.jpg" height="150px"> </b> <br>`;
+
+                    contador++;
+
+
+
+                }
+
+
+
+            }
+
+            while (contador2 <= qtd_meninas) {
+
+                if (contador2 % 2 == 0) {
+
+                    msn2.innerHTML += `<b>${contador2}º menina ganhando uma <br> <img src="./feiticeira.jpg" height="100px"> </b>  <br>`;
+
+                    contador2++;
+
+
+                } else {
+
+                    msn2.innerHTML += ` <b>${contador2}º menina ganhando um <br> <img src="./capitamarvel.jpg" height="100px"> </b> <br>`;
+
+                    contador2++;
+
+
+
+                }
+
+
+
+            }
+
+            msn3.innerHTML = `<b>Subtotal com meninos: ${subtotal_brinquedo_menino}</b>`;
+            msn4.innerHTML = `<b>Subtotal com meninas: ${subtotal_brinquedo_menina}</b>`;
+            msn5.innerHTML = `<b>Total = ${total}</b> <br>`;
+
+
+
+        } else {
+
+            msn.innerHTML = `<b>Onde já se viu quantidade negativa de crianças?!</b>`;
+
+
+        }
+
+
+        if (subtotal_brinquedo_menino > subtotal_brinquedo_menina) {
+            msn5.innerHTML += `Você vai gastar mais com os meninos <br>`;
+
+
+
+        } if (subtotal_brinquedo_menina > subtotal_brinquedo_menino) {
+            msn5.innerHTML += `Você vai gastar mais com as meninas <br>`;
+
+        }
+        if (subtotal_brinquedo_menina == subtotal_brinquedo_menino) {
+            msn5.innerHTML += `Você vai gastar o mesmo com ambos <br>`;
+
+        }
+
+
+
+
+
+
+
+    }
+
+
+</script>

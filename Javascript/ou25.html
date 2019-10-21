@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2>Conector Lógico || (ou)</h2>
+
+   <p> Qual a Temperatura atual ? <input type="text" id="temperatura"></p>
+
+   <button onclick="clima()">Ver Clima</button>
+
+
+
+</body>
+</html>
+
+<script>
+
+function clima(){
+    
+var valor_temperatura = Number(temperatura.value);
+
+    if(valor_temperatura < 21 || valor_temperatura > 24){
+       
+
+if(valor_temperatura < 21){
+
+    alert(`Alerta de desconforto!`);
+    alert(`As pessoas vão ter hipotermina`);
+
+}
+if(valor_temperatura > 24){
+
+    alert(`Alerta de desconforto!`);
+    alert(`As pessoas vão ter derreter`);
+}
+
+}
+
+
+}
+
+
+
+</script>

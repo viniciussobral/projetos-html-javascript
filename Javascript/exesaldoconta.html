@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Saldo Conta</title>
+</head>
+<body>
+    
+
+<p>
+         Informe o seu saldo na conta do banco:
+        <input id="saldo">
+</p>
+     
+    <div id="msn1" style="display: none">
+
+            <b id="zero">Conta Zerada</b>
+
+    </div>
+
+    <div id="msn2" style="display: none">
+
+            <b id="negativo" style="color: red">Saldo Negativo</b>  
+    </div>
+
+    <div id="msn3" style="display: none">
+
+            <b id="negativo" style="color: rgb(133, 6, 6)">Igual o Corinthians no Serasa</b>
+
+    </div>
+
+    <div id="msn4" style="display: none">
+
+      <b id="positivo" style="color: blue">Saldo Positivo</b>
+
+    </div>
+      
+
+<button onclick="ver_saldo()" >Verificar Finanças</button>
+
+
+
+
+</body>
+</html>
+
+<script>
+
+function ver_saldo(){
+
+// Deixa todos invisiveis, então ele só selciona os Ifs
+msn1.style.display = "none";
+msn2.style.display = "none";
+msn3.style.display = "none";
+msn4.style.display = "none";
+
+
+var sald = Number(saldo.value);
+
+// Se eu quero saber se uma coisa é igual a outra eu tenho colocar == valor. 
+// E não pode ser só um "=" pois dessa forma ele irá atribuir um valor
+if(sald == 0){
+
+msn1.style.display = "block";
+
+
+}
+if(sald < 0){
+
+msn2.style.display = "block";
+
+if(sald <= -1000){
+
+msn3.style.display = "block";
+
+
+}
+
+
+}
+
+if(sald > 0){
+
+msn4.style.display = "block";
+
+
+}
+
+
+
+
+
+}
+
+
+</script>

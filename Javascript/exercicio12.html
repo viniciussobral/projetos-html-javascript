@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <img src="subzero.jpg" alt="" id="fotoMuda">
+    <br>
+    <button onclick="apanhar()" id="btn1">Apanhar</button>
+    <br>
+    <button onclick="Concentrar()" id="btn2">Concentrar Força</button>
+    <br>
+    <span id="idResultado"></span>
+    <br>
+    <span id="idVida" style="color:blue"></span>
+</body>
+<script>
+    var vida = 1000;
+
+    function apanhar() {
+        vida -= 100
+        valida()
+    }
+
+    function Concentrar() {
+        var vida1 = 0;
+        vida1 = vida * 0.05.toFixed(2);
+        vida += vida1;
+        valida()
+    }
+
+    function valida() {
+        if (vida <= 0) {
+            idResultado.innerHTML = `Lutador já era!`
+            fotoMuda.src = 'scorpion.jpg'
+            btn1.disabled = true;
+            btn2.disabled = true;
+            idVida.style = 'color:red;'
+            idVida.innerHTML = `Vida do lutador esta em 0`;
+        } else {
+            idResultado.innerHTML = `Lutador ainda vivo!`
+            idVida.innerHTML = `Vida do lutador esta em ${vida.toFixed(2)}`
+        }
+    }
+</script>
+
+</html>

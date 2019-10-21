@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exe 3</title>
+</head>
+
+<body>
+
+
+    <p>
+        Informe um número: <input type="text" id="n1">
+    </p>
+
+    <p>
+        Informe uma frase: <input type="text" id="frase">
+    </p>
+
+    <button onclick="ver_frases()">Papagaio</button>
+
+
+
+
+
+
+</body>
+
+</html>
+
+<script>
+
+    function ver_frases() {
+
+        var valor_n1 = Number(n1.value);
+        var valor_frase = (frase.value);
+        var contador = 1;
+
+        while (contador <= valor_n1) {
+
+            alert(`${valor_frase}`);
+
+            contador++;
+
+        }
+
+
+
+    }
+
+
+
+</script>

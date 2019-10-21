@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+        Valor guardado: R$ <b id="guardado">0.00</b> 
+        <b id="financa"></b> 
+
+       <p><button onclick="guardar_5()">Guardar 5,00R$</button></p> 
+       <p><button onclick="gastar_10()">Gastar 10,00R$</button></p> 
+
+
+</body>
+</html>
+
+
+<script>
+
+valor = 0;
+
+function guardar_5(){
+
+valor  += 5;
+guardado.innerHTML = valor.toFixed(2);
+
+financ();
+
+
+
+
+
+
+}
+
+function gastar_10(){
+
+valor -= 10;
+guardado.innerHTML = valor.toFixed(2);
+
+financ();
+
+
+
+
+
+
+}
+
+
+function atualizar(){
+
+  if(valor >= 0){
+
+financa.innerHTML = `<br> <b style="color:blue">Finanças OK!</b>`;
+
+if(valor > 100){
+
+financa.innerHTML += `<br> <b style="color:black">#ostentação</b>`;
+  }
+}
+
+if(valor < 0){
+
+financa.innerHTML = `<br> <b style="color:red">Finanças em perigo!</b>`;
+
+if(valor < -20){
+
+financa.innerHTML += `<br> <b style="color:red">Quase um Corinthians!</b>`;
+}
+
+}
+
+}
+
+
+
+
+
+
+
+
+</script>

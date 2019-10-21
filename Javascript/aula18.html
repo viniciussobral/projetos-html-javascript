@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <p>
+        Informe quantas aprovações em concurso você teve:
+        <input type="text" id="concurso">
+
+   
+    </p>
+
+    
+    Informe quantas namora já teve:
+    <input type="text" id="namorada">
+
+    <button onclick="inveja()">Ver Inveja</button>
+
+</body>
+</html>
+
+<script>
+
+function inveja(){
+
+var aprovacao = Number(concurso.value);
+var namoros = Number(namorada.value);
+
+
+alert (`Jonhy quer ter  ${++aprovacao} Aprovações o porque seu primo teve ${--aprovacao}`);
+alert (`Jonhy quer ter  ${++namoros} Namoradas porque seu primo teve ${--namoros}`);
+
+
+
+}
+
+
+</script>

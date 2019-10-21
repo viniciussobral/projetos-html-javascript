@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+
+        <h2>Nota e Frequencia do Aluno</h2>
+
+        <p>Informe a Nota do Aluno:<input id="nota"></p> 
+        <p>Informe a Frequencia do Aluno:<input id="freq"></p> 
+     
+        <button onclick="avaliar_aluno()">Avaliar aluno</button>
+
+
+
+</body>
+</html>
+
+<script>
+
+        function avaliar_aluno(){
+        
+        var valor_nota = Number(nota.value);
+        var valor_freq = Number(freq.value);
+
+        if(valor_nota >= 5 && valor_freq >= 75){
+        
+        alert(`Parabéns! Aprovado!`);
+        
+        
+        } 
+        else{
+
+            alert(`Infelizmente, não foi desta vez!`);
+
+        }
+        
+}
+        
+</script>

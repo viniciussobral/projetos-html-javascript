@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <select  id="mercearia" onchange="verpreco()">
+
+        <option>Escolha um produto</option>
+        <option value="10,00">Bolo</option>
+        <option value="5,00">Refrigerante</option>
+        <option value="15,00">Arroz</option>
+        <option value="4,00">Farinha</option>
+
+    </select>
+
+   <button onclick="verpreco()">Ver preço do Produto</button>
+
+
+
+</body>
+</html>
+
+<script>
+
+function verpreco(){
+ 
+ alert(`O preço do produto é: R$ ${mercearia.value} `);
+
+
+
+}
+
+
+</script>

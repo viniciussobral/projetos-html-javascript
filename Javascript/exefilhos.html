@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Familia</title>
+</head>
+<body>
+    
+   <p>  
+       informe a quantidade de filhos:
+        <input id="filhos">
+    </p> 
+
+    <div id="msn"></div>
+
+    <button onclick="familia()">Analisar Familia</button>
+
+
+</body>
+</html>
+
+<script>
+
+    function familia(){
+     var filhos1 = Number(filhos.value);
+
+        if(filhos1 >= 1){
+         
+         msn.innerHTML = `<b>Não Tem TV </b>`;
+
+         if(filhos1 >= 2){
+         
+         msn.innerHTML += `<br> <span style="color:blue"><u> Não Tem Internet</u><span>`; //colocar o mais igual para pegar o valor anterior
+
+
+        }
+
+        if(filhos1 >= 3){
+         
+         msn.innerHTML += `<br> <span style="color:green">Não Tem Video Game</span> `;
+
+
+        }
+
+        if(filhos1 >= 4){
+         
+         msn.innerHTML += `<br> <b style="color:red"> Não Tem Netflix <b>`;
+
+
+        }
+
+
+        }
+
+    }
+
+
+
+</script>

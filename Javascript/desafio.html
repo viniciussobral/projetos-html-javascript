@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PG</title>
+</head>
+<body>
+    
+  <p>
+       Informe o primeiro termo:
+       <input type="text" id="termo">
+    
+    </p> 
+
+    <p>
+            Informe o valor:
+            <input type="text" id="valor">
+          
+    </p> 
+
+    <p>
+            Informe o termo que você quer obter:
+            <input type="text" id="obt">
+              
+    </p> 
+
+
+   <p><button onclick="desafio()">Calcular PG</button></p> 
+
+</body>
+</html>
+
+
+<script>
+
+function desafio(){
+
+
+var ter1 = termo.value;
+var vl1 = valor.value ;
+var obt1 = obt.value;
+var pg = ter1 * vl1 **(obt1 - 1); //Progressão Geométrica.
+
+
+
+alert(`O termo dessa PG será:  ${pg}`);
+
+
+
+}
+
+
+</script>

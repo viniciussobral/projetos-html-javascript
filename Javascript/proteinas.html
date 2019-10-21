@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+       
+            <p> <h2>Quanto por dia ?</h2> </p> 
+
+             <p> Em proteinas ?
+                <input type="text" id="protein">
+            </p>
+        
+            <p> Em carboidratos ?
+                <input type="text" id="carbo">
+            </p>
+
+            <p> Em Frutas/Legumes ?
+                    <input type="text" id="fl">
+                </p>
+        
+        
+            <p><button onclick="whey()">Ver dados</button></p>
+
+            <div id="msn">
+              
+                Diariamente você come: <ul>
+
+                    <li style="color: brown" id="li_protein"> ? Proteinas </li>
+                    <li style="color: blue" id="li_carbo"> ? Carboidratos </li>
+                    <li style="color: green" id="li_fl"> ? Frutas/Legumes </li>
+                </ul>
+
+            </div>
+        
+</body>
+</html>
+
+<script>
+
+        function whey() {
+    
+             li_protein.innerHTML = `${protein.value} Proteínas`;
+             li_carbo.innerHTML = `${carbo.value} Carboidratos`;
+             li_fl.innerHTML = `${fl.value} Frutas/Legumes`;
+    
+    
+    
+        }
+    
+    </script>

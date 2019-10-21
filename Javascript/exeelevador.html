@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    Informe o peso total do elevador:
+    <input type="text" id="total">
+
+    <button onclick="elevador()">Ligar Elevador</button>
+
+
+</body>
+</html>
+
+<script>
+
+function elevador(){
+ var valor_elevador = Number(total.value);
+
+    if(valor_elevador < 500){
+
+        alert(`O elevador vai se mover`);
+    }
+    else{
+
+        alert(`Alguem precisa descer do elevador`);
+    }
+
+
+}
+
+
+</script>

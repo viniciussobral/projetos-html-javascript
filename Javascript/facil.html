@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p> Informe o seu bairro:
+        <input type="text" id="bairro">
+    </p>
+
+    <p>Informe o numero de cachorros:
+        <input type="text"  id="cao">
+    </p>
+
+    <p>
+        <div id="aparecer"></div>
+    </p>
+
+    <p><button onclick="endereco()">Ver dados</button></p>
+
+
+</body>
+
+</html>
+
+<script>
+
+    function endereco() {
+
+    aparecer.innerHTML = `O seu bairro é <i style="color:blue">${bairro.value}</i>. <u style="color:orange">${cao.value}</u> cachorros.`; 
+
+    }
+
+</script>

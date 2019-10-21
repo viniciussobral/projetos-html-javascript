@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Economia</title>
+</head>
+<body>
+    
+    <p>
+        Informe o valor que você tem economizado:    
+        <input type="text" id="economia">
+    </p>
+
+    <div id="msn1" style="display: none">
+
+        <b>Nada de compras</b>
+    </div>
+
+    <div id="msn2" style="display: none">
+
+            <b> Viajem de ida e volta pra Praia Grande</b>
+    </div>
+
+    <div id="msn3" style="display: none">
+
+            <b>Uma boa moto usada</b>
+    </div>
+
+    <div id="msn4" style="display: none">
+
+            <b>Mais alguma bobagem legal</b>
+    </div>
+
+    <button onclick="economias()">Poder de compra</button>
+
+</body>
+</html>
+
+<script>
+
+function economias(){
+
+  // deixando todos os valores invisiveis
+   msn1.style.display = "none";
+   msn2.style.display = "none";
+   msn3.style.display = "none";
+   msn4.style.display = "none";
+
+   var valor_economia = Number(economia.value);
+
+   if(valor_economia <= 0){
+
+   msn1.style.display = "block";
+
+  }
+  if(valor_economia > 0){
+
+    msn2.style.display = "block";
+
+      if(valor_economia <=100 ){
+
+      msn2.style.display = "block";
+
+     }
+
+  }
+  if(valor_economia >100){
+
+    msn3.style.display = "block";
+
+    if(valor_economia < 4000){
+
+        msn3.style.display = "block";
+
+    }
+
+    if(valor_economia>4000){
+
+        msn4.style.display = "block";
+
+
+    }
+
+  }
+  
+
+
+}
+
+
+</script>

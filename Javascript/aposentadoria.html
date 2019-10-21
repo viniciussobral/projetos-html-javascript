@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aposentadoria</title>
+</head>
+<body>
+    
+    <h2>Aposentadoria</h2>
+
+   <p>Qual a sua idade ?
+    <input type="text" id="idade" autofocus></p> 
+
+   <p><button onclick="calcular()">Calcular</button></p> 
+    <button onclick="limpar()">Limpar</button>
+
+
+
+</body>
+</html>
+
+<script>
+
+function calcular(){
+    
+    var idade1 = Number(idade.value);
+    var tempo_homem = 60 - idade1;
+    var tempo_mulher = 50 - idade1; 
+
+   
+    if(idade1 > 60 ){
+
+      alert('Voce ja deveria ser aposentado');
+
+    }
+    
+    else{
+
+    alert(`Se for homem faltam ${tempo_homem} anos p/ aposentar. E mulher faltam ${tempo_mulher}`);
+
+   }
+ 
+
+}
+
+function limpar(){
+     if(document.getElementById('idade').value!=""){
+    (document.getElementById('idade').value="");
+  
+
+
+   }
+
+
+
+}
+</script>

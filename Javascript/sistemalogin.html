@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+
+        <h2>Login e Senha Aluno</h2>
+
+        <p>Informe o Login de usuário:<input id="login"></p> 
+        <p>Informe a Senha de usuário:<input id="senha" type="password"></p> 
+        <p>Informe o código de segurança:<input id="cod"></p> 
+        
+     
+        <button onclick="ver_login()">Entrar</button>
+
+
+
+
+
+</body>
+</html>
+
+<script>
+
+        function ver_login(){
+        var valor_login = (login.value);
+        var valor_senha = (senha.value);
+        var valor_cod = (cod.value);
+        
+        if(valor_login == "bandtec" && valor_senha == "digital" && valor_cod =="123"){
+        
+        alert(`Usuário autenticado com sucesso`);
+        
+        }
+        else{
+        
+            alert(`Falha na autenticação`);
+        
+        }
+        
+        }
+        
+        
+        </script>

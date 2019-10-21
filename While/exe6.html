@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exe 6</title>
+</head>
+
+<body>
+
+
+
+    <p>Informe a quantidade de elefantes: <input type="text" id="elefantes"></p>
+    <button onclick="ver_elefantes()">Atazanar a médium</button>
+    <br><br>
+    <span id="msn1"></span>
+
+
+
+
+
+
+
+</body>
+
+</html>
+
+<script>
+
+    function ver_elefantes() {
+
+        var qtd_elefantes = Number(elefantes.value);
+        var contador = 2;
+        var incomodar = 'incomodam';
+        msn1.innerHTML = "";
+
+        while(contador <= qtd_elefantes){
+
+             msn1.innerHTML += `<b>1 elefante incomoda muita gente! </b> <br>`;
+             msn1.innerHTML += `<b> ${contador} elefantes ${incomodar += ', incomodam'} muito mais! </b> <br><br>`;
+
+             contador++;
+
+
+
+        }
+      
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+</script>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+        <h2>Idade e salário</h2>
+
+        <p>Informe a sua Idade:<input id="idade"></p> 
+        <p>Informe o seu salário:<input id="salario"></p> 
+
+
+        <button onclick="idade_salario()">Entrar</button>
+
+        <p><b id="msn"></b></p> 
+
+
+</body>
+</html>
+
+<script>
+    function idade_salario(){
+
+var valor_idade = (idade.value);
+var valor_salario = (salario.value);
+
+if(valor_idade < 18 && valor_salario < 2500){
+msn.innerHTML = `Menor de idade e Liso`;
+
+}
+
+if(valor_idade < 18 && valor_salario < 2500){
+msn.innerHTML = `Menor de idade e Liso`;
+
+}
+
+if(valor_idade < 18 && valor_salario >= 2500){
+msn.innerHTML = `Menor de idade Ostentação`;
+
+}
+if(valor_idade >= 18 && valor_salario < 3500){
+msn.innerHTML = `Maior de idade e Liso`;
+
+}
+if(valor_idade >= 18 && valor_salario >= 3500 && valor_salario <= 7000){
+msn.innerHTML = `Maior de idade e Ostentação`;
+
+}
+if(valor_idade >= 18 && valor_salario > 7000){
+msn.innerHTML = `Maior de idade e Mega Ostentação`;
+
+}
+
+
+}
+
+
+
+
+
+</script>

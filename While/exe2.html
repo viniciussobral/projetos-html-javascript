@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exe 2</title>
+</head>
+<body>
+    
+
+    <button onclick="ver_pares()">S2 Pares</button>
+    <br>
+
+    <span id="num"></span>
+    <br><br>
+
+    <button onclick="ver_impares()">S2 Impares</button>
+    <br>
+    <span id="num2"></span>
+
+
+
+
+
+</body>
+</html>
+
+<script>
+
+function ver_pares(){
+
+var contador = 2;
+num.innerHTML = "";
+
+while(contador <= 100){
+
+    num.innerHTML += `<b> ${contador}</b> <br>`;
+
+    contador+= 2;
+}
+
+}
+
+function ver_impares(){
+
+    var contador = 1;
+    num2.innerHTML = "";
+
+    while(contador <= 100){
+
+        num2.innerHTML += `<b> ${contador} </b> <br>`;
+
+        contador+= 2;
+
+
+
+
+    }
+}
+
+</script>
+

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calcular</title>
+</head>
+<body>
+    
+     <p>Informe o 1° Número:
+        <input type="text" id="n1"></p> 
+
+
+    <p>Informe o 2° Número:
+        <input type="text" id="n2"></p> 
+
+        <p> <button onclick="soma()">Somar</button></p> 
+        <div id="msn1" style="display: none"> 
+       
+            <p><b id="val"> </b></p> 
+        </div>
+
+       
+        <p> <button onclick="sub()">Subtrair</button></p>
+        <div id="msn2" style="display: none"> 
+       
+            <p><b id="val2"> </b></p> 
+        </div>
+
+      
+        <p><button onclick="mult()">Multiplicar</button></p> 
+        <div id="msn3" style="display: none"> 
+       
+            <p><b id="val3"> </b></p> 
+        </div>
+
+        
+        <p><button onclick="divi()">Dividir</button></p>
+        <div id="msn4" style="display: none"> 
+       
+            <p><b id="val4"> </b></p> 
+        </div>
+
+       
+    
+     
+       
+        
+
+
+
+
+</body>
+</html>
+
+<script>
+
+   function soma(){
+    
+    var adicao = Number(n1.value) + Number(n2.value);
+    val.innerHTML = `A Soma entre ${n1.value} e ${n2.value} é = ${adicao} `;
+
+     msn1.style.display = 'block';
+    
+
+   }
+
+   function sub(){
+    
+    var subtracao = Number(n1.value) - Number(n2.value);
+    val2.innerHTML = `A Diferença entre ${n1.value} e ${n2.value} é = ${subtracao} `;
+
+    msn2.style.display = 'block';
+
+   }
+
+   function mult(){
+    
+    var multplicacao = Number(n1.value) * Number(n2.value);
+    val3.innerHTML = `O Produto entre ${n1.value} e ${n2.value} é = ${multplicacao} `;
+
+    msn3.style.display = 'block';
+
+   }
+
+   function divi(){
+    
+    var divisao = Number(n1.value) / Number(n2.value);
+    val4.innerHTML = `A Razão entre ${n1.value} e ${n2.value} é = ${divisao} `;
+
+    msn4.style.display = 'block';
+
+   }
+
+
+
+</script>

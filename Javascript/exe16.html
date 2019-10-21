@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+<p style="color: green"> Votos na <u>Praça é Nossa:</u> <span id="praca">0</span></p>
+<p style="color: green"> Votos no <u>Zorra Total:</u> <span id="zorra">0</span></p>
+<p style="color: green"> Total de Votos:<span id="votos">0</span></p>
+
+
+<button onclick="votos_praca()">Votar na praça é nossa</button>
+<button onclick="votos_zorra()">Votar na Zorra Total</button>
+
+
+    
+
+
+
+</body>
+</html>
+
+<script>
+
+var zorra1 = 0;
+var praca1 = 0;
+var votos1 = 0;
+
+function votos_praca(){
+
+praca1 += 1;
+votos1 += 1;
+
+praca.innerHTML = praca1;
+votos.innerHTML = votos1;
+
+
+
+}
+
+function votos_zorra(){
+    
+    zorra1 += 1;
+    votos1 +=1;
+
+    zorra.innerHTML = zorra1;
+    votos.innerHTML = votos1;
+
+}
+
+
+
+</script>

@@ -1,0 +1,73 @@
+I.  Evite estresse! Caso use note da faculdade, crie o programa na unidade de disco que não é zerada ou direto num pendrive por segurança, caso o note desligue. Alunos que perderem o projeto por conta disso e não entregarem a prova NÃO terão direito a fazer uma "substituitiva"
+
+II. Envie o arquivo html e as imagens (se for caso) pelo moodle. NÃO "zipe" os arquivos!
+
+III. O nome do arquivo deve ser seunome-seusobrenome-c2.html. Ex: maria-silva-c2.html. Provas com projetos de nome fora desse padrão terão um desconto de 1,0pt na nota final da prova! 
+
+IV. As notas possíveis para a prova são:
+  * 0 (zero) - Colou (deu ou recebeu cola) ou não fez nada de relevante
+  * 25% - Fez menos que o mínimo esperado
+  * 50% - Fez o mínimo esperado 
+  * 75% - Até 1 erro relevante e/ou faltou até 1 detalhe importante
+  * 100% - Prova perfeita ou com erros irrelevantes.
+
+V. Não é permitido usar técnicas não ensinadas em aula, mesmo que corretas. Seu uso provocará o desconto de 1,0pt na nota final
+
+
+Questão única:
+OBS: Os itens de a) a f) valem 7,5 pts. Apenas fazendo os demais itens pode-se chegar aos 10 pts.
+
+Tales Pecial é um cara com muito dinheiro, pois é formado pela Bandtec e, em menos de 5 anos de formado já ganha cerca de 10mil. Ele é um cara que gosta muito de ajudar crianças carentes de Campinas, visto que foi uma. Tales precisa de um app que o ajude a se plajenar financeiramente para a compra de camisas de times de Campinas para crianças pobres na época do Natal.
+
+Este ano ele vai dar camisas do Guarani e da Ponte Preta para as crianças pobres de Campinhas. Assim, crie para ele um programa em HTML/JS o qual:
+
+a) Pergunte quantos torcedores do Guarani e quantos torcedores da Ponte Preta vai ajudar (ou seja, são 2 campos diferentes)
+
+b) Pergunte os preços das camisas dos 2 times (ou seja, são 2 campos diferentes)
+
+c) Ao clicar num botão "Criança feliz"...
+
+d) O programa deve primeiro verificar se a quantidade de ambos os torcedores são pelo menos 0 (zero). Se um deles for menor que zero, exiba a seguinte frase abaixo do botão: Onde já se viu quantidade negativa de torcedores?!. Outra verificação é do valor das camisas. Ambos devem ser pelo menos R$2,00. Se algum deles não for, exiba a seguinte frase abaixo do botão: Camisa desse preço é pirata!!!. Perceba que podem ocorrer os 2 erros de validação ao mesmo tempo: Alguma quantidade negativa ou algum preço menor que R$2,00.
+
+Caso esteja tudo certo com as quantidades e preços...
+
+e) Exiba um texto como este abaixo do botão:
+
+    1º torcedor do Guarani ganhando sua camisa verde
+    2º torcedor do Guarani ganhando sua camisa verde
+    1º torcedor da Ponte Preta ganhando sua camisa alvinegra
+    2º torcedor da Ponte Preta ganhando sua camisa alvinegra
+    3º torcedor da Ponte Preta ganhando sua camisa alvinegra
+
+
+f) Após o texto de e) exibir os subtotais e total da compra como neste texto de exemplo:
+    Subtotal com torcedores do Guarani: R$X.XX
+    Subtotal com torcedores da Ponte Preta: R$Y.YY
+    Total: R$Z.ZZ
+Onde X é o preço da camisa do Guarani vezes a quantidade de torcedores do Guarani, Y é o preço da camisa da Ponte Preta de menina vezes a quantidade de torcedores da Ponte Preta e Z é a soma entre X e Y. Todos devem aparacer com 2 casas decimais.
+
+
+
+g) Aperfeiçoe as frases do item e) de tal forma que os torcedores do Guarani em posições pares ganhem uma camisa do Guarani de cor predominantemente verde com detalhes brancos e os em posições ímpares ganhem uma de cor predominantemente branca com detalhes verdes. Ademais, ao invés de mostrar um texto, mostre uma pequena foto da camisa. Ex:
+
+    1º torcedor do Guarani ganhando [foto camisa +branca -verde]
+    2º torcedor do Guarani ganhando [foto camisa +verde -branca]
+    3º torcedor do Guarani ganhando [foto camisa +branca -verde]
+    4º torcedor do Guarani ganhando [foto camisa +verde -branca]
+Para saber se um número é par, basta testar se o resto de sua divisão por 2 é 0. Se for, ele é par.
+
+
+h) Aperfeiçoe as frases do item e) de tal forma que os torcedores da Ponte Preta em posições pares ganhem uma camisa da Ponte Preta de cor predominantemente branca com detalhes pretos e os em posições ímpares ganhem uma de cor predominantemente preta com detalhes brancos. Ademais, ao invés de mostrar um texto, mostre uma pequena foto da camisa. Ex:
+
+    1º torcedor da Ponte Preta ganhando [foto camisa +branca -preta]
+    2º torcedor da Ponte Preta ganhando [foto camisa +preta -branca]
+    3º torcedor da Ponte Preta ganhando [foto camisa +branca -preta]
+    4º torcedor da Ponte Preta ganhando [foto camisa +preta -branca]
+
+Para saber se um número é par, basta testar se o resto de sua divisão por 2 é 0. Se for, ele é par.
+
+
+i) Após a frase do "Total", exiba mais uma frase que pode ser uma destas 3:
+   Você vai gastar mais com os torcedores do Guarani (caso o subtotal de torcedores do Guarani for maior)
+   Você vai gastar mais com os torcedores da Ponte Preta (caso o subtotal de torcedores da Ponte Preta for maior)
+   Você vai gastar o mesmo com ambos (caso o subtotal de ambos forem iguais)

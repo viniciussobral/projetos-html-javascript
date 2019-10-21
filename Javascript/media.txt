@@ -1,0 +1,15 @@
+nota1 = 8 
+8
+nota2 = 6
+6
+(nota1 + nota2)/2
+7
+alert('É nois programando!')
+undefined
+alert(`Minha 1° Nota foi ${nota1}` )
+undefined
+alert(`Minha 2° Nota foi ${nota2}` )
+undefined
+media =(nota1 + nota2)/2
+7
+alert(`A média das notas é ${media}`)

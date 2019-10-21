@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lista 5 - q32</title>
+</head>
+<body>
+    <h2>Lista 5 - q32</h2>
+
+    Login: <input id="login"> <br>
+    Senha: <input id="senha"> <br>
+    Informação Pessoal: <input id="pessoal"> <br>
+    
+    <button onclick="autenticar()" id="">Autenticar</button>
+
+    <br><div id="div_resultado"></div>
+</body>
+</html>
+<script>
+
+var tentativas = 3;
+
+function autenticar() {
+
+    if (tentativas > 0) {
+
+        var valor_login = login.value;
+        var valor_senha = senha.value;
+        var valor_pessoal = pessoal.value;
+
+        if (valor_login=='ana' && valor_senha=='braga' && valor_pessoal=='1960' || valor_pessoal=='louro josé') {
+            div_resultado.innerHTML = 'Usuário autenticado';
+            tentativas = 3;
+        } else {
+            div_resultado.innerHTML = 'Falha na autenticação';
+            tentativas--;
+            div_resultado.innerHTML += `<br>Você ainda tem ${tentativas} tentativa(s)`;
+
+            if (tentativas == 0) {
+                div_resultado.innerHTML += `<br>Usuário BLOQUEADO! Procure seu gerente!`;
+            }
+        }
+
+    }
+     
+}
+</script>

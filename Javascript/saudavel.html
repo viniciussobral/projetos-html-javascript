@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+
+  <h2>Almoço Saudável </h2>
+   
+  <p>Informe qual o valor da unidade da Cenoura:
+        <input type="text" id="cenoura"></p>  
+
+  <p>Informe qual o valor da unidade dos Melões:
+        <input type="text" id="melao"></p> 
+    
+  <p>Informe qual o valor da unidade do peixe:
+        <input type="text" id="peixe"></p> 
+
+  <p>Informe qual o valor da unidade do Alface:
+        <input type="text" id="alface"></p> 
+
+
+  <p>Informe quantas unidades de Cenoura você irá comprar:
+        <input type="text" id="uni_cenoura"></p>  
+          
+  <p>Informe quantas unidades de Melões você irá comprar:
+        <input type="text" id="uni_melao"></p>  
+              
+  <p>Informe quantas unidades de Peixe você irá comprar:
+      <input type="text" id="uni_peixe"></p>  
+          
+  <p>Informe quantas unidades de Alface você irá comprar:
+      <input type="text" id="uni_alface"></p>  
+
+      <button onclick="calculofeira()">#PartiuFeira</button>
+
+      <div id="msn" style="display: none">
+
+        <p> 
+          <span style="color: green"><i>O total da compra ficou em </span> <b id="ver_total"></b> <b>R$</b>  
+          <span style="color: green"><i>e com peso total de</i></span> <b id="ver_peso_total"></b> <b>kg</b> 
+        </p>
+
+        <p>
+            <span style="color:blue"><i>Cada um dos 5 amigos terá que desembolsar  <b id="ver_amigos_pagar"></b> <b>R$</b>  
+              <i>e teria que carregar </i> <b id="ver_amigos_peso"></b> <b> kg</b> de peso </span>
+        </p>
+
+        <p> 
+            <span style="color: blueviolet"><i>Porém, os homens vão carregar </span> <b style="color: blue" id="ver_homens_peso"></b> 
+              <b style="color: blue">kg</b> <span style="color: blueviolet">de peso</span>  
+            <span style="color: blueviolet"><i>e a mulheres</i></span> <b style="color: red" id="ver_mulheres_peso"></b> <b style="color: red"> kg </b> 
+          </p>
+
+        
+
+      </div>
+
+
+</body>
+</html>
+
+<script>
+
+   function calculofeira(){
+
+    var sub_total_preco_cenouras = Number(cenoura.value) * Number(uni_cenoura.value);
+    var sub_total__preco_melao = Number(melao.value) * Number(uni_melao.value);
+    var sub_total__preco_peixe = Number(peixe.value) * Number(uni_peixe.value);
+    var sub_total_preco_alface = Number(alface.value) * Number(uni_alface.value);
+
+
+    var sub_total_peso_cenouras = Number(uni_cenoura.value) * 0.050;
+    var sub_total_peso_melao = Number(uni_melao.value * 0.15);
+    var sub_total_peso_peixe =  Number(uni_peixe.value * 0.030);
+    var sub_total_peso_alface = Number(uni_alface.value * 0.015);
+
+    var total_compra = sub_total_preco_cenouras + sub_total__preco_melao + sub_total__preco_peixe + sub_total_preco_alface;
+    var peso_total_compra = sub_total_peso_cenouras + sub_total_peso_melao + sub_total_peso_peixe + sub_total_peso_alface;
+
+    var amigos_pagar = total_compra / 5;
+    var amigos_peso = peso_total_compra / 5;
+
+    var peso_homem = peso_total_compra * 0.9;
+    var peso_mulher = peso_total_compra * 0.1;
+
+
+    ver_total.innerHTML = total_compra.toFixed(2);
+    ver_peso_total.innerHTML = peso_total_compra.toFixed(2);
+    ver_amigos_pagar.innerHTML = amigos_pagar.toFixed(2);
+    ver_amigos_peso.innerHTML = amigos_peso.toFixed(2);
+    ver_homens_peso.innerHTML = peso_homem.toFixed(2);
+    ver_mulheres_peso.innerHTML = peso_mulher.toFixed(2);
+
+
+      msn.style.display = "Block";
+
+
+
+   }
+
+</script>

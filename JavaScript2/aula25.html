@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <h2>Obtendo Informações de textos</h2>
+
+    Digite algo: <input id="frase" onkeyup="analisar()">
+    <br><br>
+
+    <div>
+
+        Quantas Letras ? <b id="letras"></b> <br>
+        Começa com 'a' ? <b id="comeca_a"></b> <br>
+        Termina com 'c' ? <b id="termina_c"></b> <br>
+        Contém '@' ? <b id="contem_arroba"></b> <br>
+        Está Vazia ? <b id="vazia"></b>
+
+    </div>
+
+
+</body>
+
+</html>
+
+<script>
+
+    function analisar() {
+        var valor_frase = frase.value;
+
+        letras.innerHTML = valor_frase.length;
+        comeca_a.innerHTML = valor_frase.startsWith('a');
+        termina_c.innerHTML = valor_frase.endsWith('c');
+
+        contem_arroba.innerHTML = valor_frase.indexOf('@')>=0; //Verifica se @ é true ou false
+
+        // verificando se um texto é vazio
+        // método 1: comparando com '' ou ""
+        vazia.innerHTML = valor_frase.length=="";
+        // verificando se o texto é vazio com 0 (Lenght: Cumprimento)
+        vazia.innerHTML = valor_frase.length==0;
+
+
+
+    }
+
+
+</script>

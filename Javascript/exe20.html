@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Multa</title>
+</head>
+<body>
+    
+     <h2>Estruturas de Decisão</h2>
+
+     Informe o valor da multa:
+     <input id="multa">
+      <br> <br>
+     <button onclick="ver()">Ver multa</button>
+
+
+
+
+
+
+</body>
+</html>
+
+<script>
+
+    function ver(){
+        
+        // para uso em estruturas de decisão é recomendavel converter os da tela em números
+        var valor_multa = Number(multa.value);
+
+       // Estrura de decisão if (Se)
+       if (valor_multa > 0){
+         
+         alert(`Pagou a multa de: R$ ${valor_multa} `);
+       }
+      
+       alert(`Viajar é muito bom!`); //Para uma saida somente não precisa de ELSE, somente a informação desejada sempre será executada.
+
+
+    }
+
+
+
+</script>

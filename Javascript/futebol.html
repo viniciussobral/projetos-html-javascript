@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+   <p>Informe a quantidade de ingressos de estudantes vendidos:
+    <input type="text" id="estudante"> </p> 
+
+    <p>
+        Informe a quantidade de ingressos comuns vendidos:
+        <input id="comum">
+    </p>
+
+    <p> 
+        Informe o valor do ingresso comum:
+        <input type="text" id="valor"> 
+
+    </p>
+
+    <button onclick="arrecadacao()">Calcular</button>
+
+
+</body>
+</html>
+
+<script>
+    
+    function arrecadacao(){
+
+        var comun1 = comum.value * valor.value;
+        var estudante1 = estudante.value * valor.value /2;
+        var arrecadacao = comun1 + estudante1;
+
+        alert(`A arrecadação foi de R$ ${arrecadacao.toFixed(2)} `);
+
+
+    }
+
+</script>

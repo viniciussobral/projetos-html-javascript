@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button onclick="pares()">S2 Pares</button>
+    <br><br>
+    <b id="mostrar"></b>
+    <button onclick="impares()">S2 Impares</button>
+    <br><br>
+    <b id="mostrar_impar"></b>
+
+
+
+
+</body>
+
+</html>
+
+<script>
+
+    function pares() {
+
+        contador = 2;
+
+        while (contador <= 100) {
+
+            mostrar.innerHTML += `${contador} <br>`
+
+            contador += 2;
+
+
+        }
+
+
+
+    }
+
+    function impares() {
+
+        contador = 1;
+        mostrar_impar.innerHTML = ``;
+
+        while (contador <= 100) {
+
+            mostrar_impar.innerHTML += `${contador} <br>`
+
+            contador += 2;
+
+
+        }
+
+
+
+    }
+
+
+
+</script>

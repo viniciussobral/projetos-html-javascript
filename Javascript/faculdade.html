@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <p><h2>Faculdade BandTec</h2></p>
+
+  <p>Informe o seu nome:
+    <input type="text" id="nome"></p>  
+
+   <p>Informe a nota que você na avaliação continuada:
+    <input  id="nota1"></p> 
+
+   <p>Infrome a nota que você tirou no semestre:
+    <input  id="nota2"></p> 
+
+    <button onclick="media()">Ver média</button>
+
+
+    <script>
+      function media(){
+        
+        var nome1 = nome.value;
+        var primeira = parseFloat(nota1.value);
+        var segunda = parseFloat(nota2.value);
+        var quarenta = primeira * 0.4;
+        var sessenta = segunda *  0.6;
+        var media = quarenta + sessenta;
+
+      
+
+        alert(`Oi '${nome1}' . A média das notas é: '${media}'`);
+
+
+
+      }
+    
+    
+    </script>
+
+
+</body>
+</html>

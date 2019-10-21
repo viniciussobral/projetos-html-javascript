@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2>Salário</h2>
+
+    <p>
+        Informe o seu salário:
+        <input type="text" id="salario">
+    </p>
+
+    <p>
+            Informe o valor da mesada do seu filho:
+            <input type="text" id="mesada">
+    </p>
+
+    <p>
+            Informe o valor do abono de natal:
+            <input type="text" id="abono_natal">
+    </p>
+
+    <button onclick="saldo()"> Calcular Saldo</button>
+
+
+
+</body>
+</html>
+
+<script>
+
+function saldo(){
+
+var sal = Number(salario.value);
+var mes = Number(mesada.value);
+var abono = Number(abono_natal.value);
+
+sal -= mes; //pega a mesada e subtrai
+sal += abono; // Pega o valor total e subtrai
+alert(`Total salario mensal: ${sal}`);
+
+
+
+
+}
+
+
+</script>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <p>Informe a nota do Atendimento: <input type="text" id="atendimento"></p>
+
+    <button onclick="avaliar()">Avaliar Atendimento</button>
+    <br>
+
+    <span id="msn"></span>
+
+
+
+
+
+
+
+</body>
+
+</html>
+
+<script>
+
+    function avaliar() {
+
+        var valor_atendimento = Number(atendimento.value);
+
+        if (valor_atendimento <0 || valor_atendimento >10) {
+
+            msn.innerHTML = `Nota invalida!`;
+
+        }
+
+        if (valor_atendimento >= 0 && valor_atendimento < 5) {
+
+            msn.innerHTML = `Não aprovado`;
+
+
+        }
+
+        if (valor_atendimento >= 5 && valor_atendimento <= 6) {
+
+            msn.innerHTML = `Neutro`;
+
+
+        }
+
+        if (valor_atendimento > 6 && valor_atendimento <=10) {
+
+            msn.innerHTML = `Aprovado`;
+
+
+        }
+
+
+    }
+
+
+</script>

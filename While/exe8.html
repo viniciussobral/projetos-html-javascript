@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exe 8</title>
+</head>
+
+<body>
+
+    <p>Informe a quantidade de voltas do carro: <input type="text" id="voltas"></p>
+    <button onclick="ver_voltas()">Iniciar corrida!</button>
+    <br>
+    <div id="msn"></div>
+
+
+
+
+
+</body>
+
+</html>
+
+<script>
+
+    function ver_voltas() {
+
+        var valor_voltas = Number(voltas.value);
+        var contador = 1;
+        msn.innerHTML = "";
+
+        while (contador <= valor_voltas) {
+
+
+            msn.innerHTML += `<b> Carro dando a ${contador}ª volta  </b> <br>`;
+            contador++;
+
+
+        }
+
+        msn.innerHTML += `<b> Corrida Finalizada! </b>`;1
+
+
+
+
+    }
+
+
+</script>

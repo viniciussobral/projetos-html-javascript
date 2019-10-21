@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dinheiro</title>
+</head>
+<body>
+    
+       
+                <img id="fotinha" src="" alt="">
+                <img id="fot" src="" alt="">
+
+                <p>Quanto de dinheiro eu terei a 6 meses 
+                   <input type="text" id="valor"></p>
+           
+                <p>Quanto dinheiro terei em 3 anos 
+                    <input type="text" id="valor2"></p>
+
+
+     <div id="msn" style="display: none"> 
+       
+     <p><b id="val"> </b></p> 
+     <p><b id="val2"> </b></p> 
+     
+    </div>
+
+    <button onclick=" mostrar()">Como estarei no futuro ?</button>
+    
+
+
+</body>
+</html>
+
+<script>
+
+function mostrar(){
+
+
+    
+    fotinha.src = 'poucodinheiro.jpg';
+    fot.src = 'muitodinheiro.jpg';
+
+    val.innerHTML = ` Você terá daqui 6 meses: ${valor.value}`;
+    val2.innerHTML = ` Você terá daqui 3 anos: ${valor2.value}`;
+
+
+    msn.style.display = 'block';
+
+
+
+}
+
+
+
+
+
+</script>

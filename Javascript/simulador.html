@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body style="background-color: rgb(139, 212, 236)">
+    
+
+ <form>
+
+  <p> <b> <h3 style="color: white; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 25px ">Informe a quantidade de <br> vacinas que se perdem mensalmente: </h3> </b> 
+    <input type="" id="vacinas"></p> 
+
+    <p> <b> <h3 style="color: white; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 25px ">Informe os gastos <br> mensais em R$ com essas perdas:</h3> </b>  
+      <input type="" id="gastos"></p>
+
+ </form>
+
+
+ <p><div id="msn1"  style=" background-color: lightblue;;  box-sizing: border-box;  width: 300px;  padding: 25px; display: none"></div></p> 
+
+ <p><div id="msn2" style="background-color: whitesmoke;  box-sizing: border-box;  width: 300px;  padding: 25px; display: none"></div></p> 
+
+    
+   <p><b><button onclick="simular()" style="color: white; background-color: #555555; border: none; padding: 15px 32px;  text-align: center; text-decoration: none; 
+   display: inline-block; font-size: 16px;  margin: 4px 2px; cursor: pointer ">Calcular Economia</b></button>
+   </p>
+
+</body>
+</html>
+
+<script>
+
+function simular() {
+
+var perdas = parseFloat(vacinas.value);
+var perda_anual = perdas * 12;
+var perdas_gastos = parseFloat(gastos.value);
+var imunodata = (perdas_gastos) -100;
+var economia = imunodata;
+var total_ano = (economia) * 12 ;
+var total = total_ano -4000;
+
+
+msn1.innerHTML = `<b> Você irá economizar Anualmente: ${total} R$ em Vacinas</b> `;
+msn2.innerHTML = `<b> E Deixará de perder anualmente: ${perda_anual} Vacinas </b> `;
+
+msn1.style.display = 'block';
+msn2.style.display = 'block';
+
+
+
+}
+
+
+
+</script>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+
+  <p>Informe o Login:<input type="text" id="login"></p> 
+  <p>Informe a Senha:<input type="text" id="senha"></p> 
+  <p>Digite a informação pessoal:<input type="text" id="info"></p> 
+
+  <button onclick="login_banco()">Autenticar</button>
+
+
+
+
+</body>
+</html>
+
+<script>
+
+function login_banco(){
+
+
+if(login.value == "ana" && senha.value == "braga"){
+
+    if(info.value == "1960" || info.value == "louro"){
+
+        alert(`Usuário autenticado`);
+    }else{
+
+        alert(`Falha na autenticação`);
+
+    }
+
+
+}else{
+    alert(`Falha na autenticação`);
+
+}
+
+
+
+}
+
+
+</script>

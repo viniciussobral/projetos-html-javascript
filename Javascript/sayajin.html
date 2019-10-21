@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sayajin</title>
+</head>
+<body>
+    <h2>Sayajin</h2>
+
+      Informe o nome do guerreiro:
+    <p><input type="text" id="gue"></p>
+
+    Informe o ki normal do guerreiro:
+    <p><input type="text" id="ki_sayajin"></p>
+
+    <button onclick="ki()">Ver ki do guerreiro</button>
+
+    <script>
+     function ki(){
+       
+       var guerreiro = gue.value;
+       var ki1 = parseFloat (ki_sayajin.value);
+       var kisuper = ki1  *  50;
+       var kisuper2 = ki1 *  100;
+       var ressuper = kisuper;
+       var ressuper2 = kisuper2;
+
+
+
+     
+
+       alert(`A forma do seu guerreiro: '${guerreiro}' . Normal é: '${ki1}'. A forma super sayajin é: '${ressuper}' . E super Sayajin2 é: '${kisuper2}' . `);
+
+
+
+
+     }
+    
+    
+    </script>
+
+</body>
+</html>
+

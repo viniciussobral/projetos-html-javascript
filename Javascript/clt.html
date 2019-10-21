@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+  <p>Informe o salario bruto:
+      <input type="text" id="bruto" autofocus>
+  </p> 
+  
+  <button onclick="desconto()">Salário Liquido</button>
+
+
+</body>
+</html>
+
+
+<script>
+
+  function desconto(){
+  var b = bruto.value;
+  var inss = b * 0.1;
+  var ir = b * 0.2;
+  var is= b / 30;
+  var descontos= inss + ir + is;
+  var total= b - descontos;
+
+  alert(`Apesar de seu bruto ser R$ ${b}, após os descontos, você receberá somente R$: ${total.toFixed(2)}`);
+
+
+
+  }
+</script>

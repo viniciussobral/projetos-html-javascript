@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Peso e altura</title>
+</head>
+<body>
+   <p><h2>Programa de peso</h2></p> 
+
+   <p>Informe o seu peso:
+    <input id="peso" autofocus></p> 
+
+   <p>Informe sua Altura:
+    <input id="altura"></p> 
+
+    <p><button onclick="dados()" >Fale Comigo</button></p>
+    <p><button onclick="Limpar()">Limpar Campo</button></p>
+
+
+</body>
+</html>
+
+<script>
+function dados(){
+// Aqui criamos 2 variaveis 
+ var  peso1 = peso.value;
+ var altura1 = altura.value;
+ 
+ alert('O programa ira mostrar os dados');
+ alert(`Você pesa: ${peso1} e tem ${altura1} Metros de Altura.`);
+   
+
+}
+
+function limpar(){
+if(document.getElementById('n1').value!=""){
+   (document.getElementById('n1').value="");
+   (document.getElementById('n2').value="");
+
+
+ }
+
+}
+
+
+
+</script>

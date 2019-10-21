@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2>Triangulo Retangulo</h2>
+
+   <p>Informe o valor do 1° Cateto
+        <input type="text" id="cateto1"></p> 
+
+   <p>Informe o valor do 2° Cateto
+        <input type="text" id="cateto2"></p> 
+
+        <button onclick="calculo()">Ver Hipotenusa</button>
+
+
+</body>
+</html>
+
+<script>
+
+function calculo(){
+var catet1 = Number(cateto1.value);
+var catet2 = Number(cateto2.value);
+var quadrado = catet1 ** 2;
+var quadrado2 = catet2 **2;
+var soma = quadrado + quadrado2;
+var hipotenusa = soma ** (1/2);
+
+
+alert(`A hipotenusa é: ${hipotenusa.toFixed(2)}`);
+
+
+}
+
+
+</script>

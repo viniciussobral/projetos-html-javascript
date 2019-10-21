@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<p>
+    Informe a quantidade de tiulos mundiais que o seu clube tem: 
+    <input type="text" id="mundial">
+</p>
+
+<button onclick="ver_trofeu()">Ver troféus de mundiais FIFA</button>
+<br><br>
+
+<div id="msn"></div>
+
+
+
+</body>
+</html>
+
+<script>
+
+function ver_trofeu(){
+
+var qtd_mundial = Number(mundial.value);
+var contador = 1;
+msn.innerHTML = "";
+
+
+       if(qtd_mundial > 0){
+           
+           while(contador <= qtd_mundial){
+               msn.innerHTML += '<img src="trofeu.png" alt="" style="height: 200px">';
+               contador++;
+           }
+
+       } else {
+           msn.innerHTML = '<img src="torcedor.jpg" alt="">';
+       }
+  
+    
+
+
+
+
+
+
+}
+
+</script>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <P>
+        <h2>Bilhete Único de SP</h2>
+    </P>
+
+    <P>
+
+        <select id="bilhete">
+
+            <option value="1">Comum</option>
+            <option value="0.5">Estudante</option>
+            <option value="0">Idoso/PNE</option>
+
+
+        </select>
+
+
+    </P>
+
+    <P>
+
+        <select id="passagem">
+
+            <option value="4">Passagem única</option>
+            <option value="5.50"> Passagem integração</option>
+        </select>
+
+
+    </P>
+
+    <button onclick="preco()">Simular preço</button>
+    <br><br>
+
+    <b id="msn"></b>
+
+
+
+</body>
+
+</html>
+
+<script>
+
+    function preco() {
+
+        var valor_bilhete = Number(bilhete.value);
+        var preco_passagem = Number(passagem.value);
+        var total = valor_bilhete * preco_passagem;
+
+
+        if (valor_bilhete == 1 && preco_passagem == 5.50) {
+
+            msn.innerHTML = `Valor da passagem escolhida: R$: ${total.toFixed(2)}`;
+
+        }
+        if (valor_bilhete == 1 && preco_passagem == 4) {
+
+            msn.innerHTML = `Valor da passagem escolhida: R$: ${total.toFixed(2)}`;
+
+        }
+        if (valor_bilhete == 0.5 && preco_passagem == 5.50) {
+
+            msn.innerHTML = `Valor da passagem escolhida: R$: ${total.toFixed(2)}`;
+
+        }
+        if (valor_bilhete == 0.5 && preco_passagem == 4) {
+
+            msn.innerHTML = `Valor da passagem escolhida: R$: ${total.toFixed(2)}`;
+
+        }
+        if (valor_bilhete == 0 && preco_passagem == 5.50) {
+
+            msn.innerHTML = `Valor da passagem escolhida: R$: ${total.toFixed(2)}`;
+
+        }
+        if (valor_bilhete == 0 && preco_passagem == 4) {
+
+            msn.innerHTML = `Valor da passagem escolhida: R$: ${total.toFixed(2)}`;
+
+        }
+
+
+
+
+
+
+
+
+
+    }
+
+
+
+</script>

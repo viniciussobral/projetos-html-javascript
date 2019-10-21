@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    Quantas Passagens deseja adquirir ?
+    <input id="passagem">
+
+    <button onclick="ver_passagen()">Comprar</button>
+
+    <p><b id="msn"></b></p>
+
+</body>
+
+</html>
+
+<script>
+
+    function ver_passagen() {
+        var qtd_passagem = Number(passagem.value);
+
+        if (qtd_passagem >= 8 && qtd_passagem <= 50) {
+
+
+            if (qtd_passagem >= 8 && qtd_passagem <= 19) {
+
+                var desconto = qtd_passagem * 0.03;
+                var total_desconto = qtd_passagem - desconto;
+                var total = total_desconto * 4;
+
+                msn.innerHTML = `Com ${qtd_passagem} passagens você irá
+                 ter um Total a pagar de:${total.toFixed(2)}R$ com 3% de desconto`;
+
+            }
+
+            if (qtd_passagem >= 20 && qtd_passagem <= 49) {
+
+                var desconto = qtd_passagem * 0.05;
+                var total_desconto = qtd_passagem - desconto;
+                var total = total_desconto * 4;
+
+                msn.innerHTML = `Com ${qtd_passagem} passagens você irá
+                ter um Total a pagar de:${total.toFixed(2)}R$ com 5% de desconto`;
+
+            }
+
+            if (qtd_passagem == 50) {
+
+                var desconto = qtd_passagem * 0.07;
+                var total_desconto = qtd_passagem - desconto;
+                var total = total_desconto * 4;
+
+                msn.innerHTML = `Com ${qtd_passagem} passagens você irá
+                 ter um Total a pagar de:${total.toFixed(2)}R$ com 7% de desconto`;
+
+            }
+        }
+        else {
+
+            alert(`Quantidade inválida para o Fidelidade!`);
+
+        }
+
+
+
+
+    }
+
+
+
+</script>

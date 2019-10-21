@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+ 
+        <h2>Nota Aluno</h2>
+
+        <p>Informe a Nota do Aluno:<input id="nota"></p> 
+     
+        <button onclick="avaliar_aluno()">Avaliar aluno</button>
+
+
+
+</body>
+</html>
+
+<script>
+
+        function avaliar_aluno(){
+        
+        var valor_nota = Number(nota.value);
+        
+        if(valor_nota < 5){
+        
+        alert(`Aluno não aprovado`);
+        
+        
+        }  if(valor_nota >= 5 && valor_nota < 8.5){
+            
+        
+        alert(`Aluno comum e aprovado!`);
+        
+        
+        }
+        if(valor_nota >= 8.5 && valor_nota<= 10){
+        
+        alert(`Aluno Exemplar!`);
+        
+        
+        }else{
+
+            alert(`Onde já se viu nota menor que 0 e maior que 10?!`);
+        }
+        
+        
+        }
+        
+        
+        </script>

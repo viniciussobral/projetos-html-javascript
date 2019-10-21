@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p>Informe quantas pessoas vão entrar no carro: <input type="text" id="pessoas"></p>
+
+    <button onclick="ver_passageiros()">#Partiu Carona</button>
+    <br>
+    <span id="msn"></span>
+
+
+</body>
+
+</html>
+
+<script>
+
+    function ver_passageiros() {
+        var valor_pessoas = Number(pessoas.value);
+        var contador = 1;
+        msn.innerHTML = '';
+
+        while (contador <= valor_pessoas) {
+
+
+            if (contador <= 5) {
+                msn.innerHTML += `O ${contador}° Passageiro entrou`;
+                if (contador == 1) {
+                    msn.innerHTML += `(que é o(a) motorista)`;
+                }
+                
+
+            }else {
+                    msn.innerHTML += `O ${contador}° Passageiro tem que esperar`;
+         }
+
+            msn.innerHTML += `<br>`;
+            contador++;
+
+        }
+
+     
+    }
+
+
+
+
+
+
+
+    
+
+
+
+
+</script>

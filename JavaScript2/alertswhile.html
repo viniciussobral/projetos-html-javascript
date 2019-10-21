@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Estruturas de Repetição</title>
+</head>
+
+<body>
+
+    <h2>Estruturas de Repetição (while)</h2>
+
+    <button onclick="repeticoes()">Repetir Alerts</button>
+    <br><br>
+    <button onclick="repetir_imagens()">Repetir HTML</button>
+    <br><br>
+
+    <b id="aparecer"></b>
+    <br>
+    <b id="img"></b>
+
+
+
+
+</body>
+
+</html>
+
+<script>
+
+    function repetir_imagens() {
+
+        var contador = 0;
+
+        img.innerHTML = ``; //Limpar o conteúdo antes porque se não repete
+
+        while (contador <10) {
+
+            img.innerHTML += `<img src="http://pudim.com.br/pudim.jpg"><br>`;
+
+            contador ++;
+
+
+        }
+
+    }
+
+
+
+    function repeticoes() {
+
+        var contador = 10;
+
+        while (contador <= 100) {
+
+            alert(`Algoritmos é vida! Número:${contador}`);
+
+            contador += 10;
+
+
+        }
+
+
+    }
+
+
+
+
+
+
+
+
+
+</script>

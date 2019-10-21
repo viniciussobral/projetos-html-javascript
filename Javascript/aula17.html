@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+<h2>Pré e pós aumento e diminuição</h2>
+
+Idade: <input type="text" id="idade">
+
+<button onclick="envelhecer()">Envelhecer 1 ano</button>
+<button onclick="rejuvenescer()">Rejuvenescer 1 ano</button>
+
+
+</body>
+</html>
+
+<script>
+
+function envelhecer(){
+
+
+    //pegando o que está na caixa
+    var idade_atual = Number(idade.value);
+
+    //usando pré incremento para aumentar idade
+    var nova_idade = ++idade_atual;
+
+    //jogando uma nova idade na caixa
+    idade.value = nova_idade;
+
+}
+
+function rejuvenescer(){
+
+
+//pegando o que está na caixa
+var idade_atual = Number(idade.value);
+
+//usando pré incremento para aumentar idade
+var nova_idade = --idade_atual;
+
+//jogando uma nova idade na caixa
+idade.value = nova_idade;
+
+}
+
+
+
+
+</script>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <h2>Contador Permanente</h2>
+
+    Você já clicou <b id="cliques">0 </b> Vezes.
+    <br><br>
+
+    <button onclick="clicar()">Clique Aumentar</button>
+    <br><br>
+    <button onclick="clicar_diminuir()">Clique Diminuir</button>
+    <br><br>
+    <button onclick="clicar15()">Roubar</button>
+
+
+</body>
+</html>
+
+<script>
+
+var contador = 0; //variavel global fora da função a (variavel local fica dentro da função)
+
+function clicar(){
+
+cliques.innerHTML = ++contador;
+
+
+ }
+
+ function clicar_diminuir(){
+
+cliques.innerHTML = --contador;
+
+
+ }
+
+ function clicar15(){
+  
+  contador += 15;
+  cliques.innerHTML = contador;
+
+
+
+ }
+
+
+
+</script>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+  <p><b style="color: blue"> <img src="fernandinho.jpg" alt="" onclick="voto_fernand()">  Votos Fernandinho:  <span id="fernand">0</span></b> </p> 
+ <p><b style="color: violet"><img src="aline.jpg" alt="" onclick="voto_aline()"> Votos Aline barros: <span id="aline">0</span></b>  </p> 
+ <p> <b style="color: orange"> Votos:  <span id="votos">0</span></b></p> 
+
+
+
+</body>
+</html>
+
+
+<script>
+
+var votof = 0;
+var votoa = 0;
+var votos1 = 0;
+
+function voto_fernand(){
+
+votof += 1;
+votos1 += 1;
+
+fernand.innerHTML = votof;
+votos.innerHTML = votos1;
+
+
+
+}
+
+
+function voto_aline(){
+
+votoa += 1;
+votos1 += 1;
+
+aline.innerHTML = votoa;
+votos.innerHTML = votos1;
+
+
+}
+
+
+
+</script>

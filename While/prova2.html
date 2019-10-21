@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p>Informe a quantidade de meninos que voce vai ajudar
+        <input type="text" id="meninos"></p>
+
+    <p>Informe a quantidade de meninas que voce vai ajudar
+        <input type="text" id="meninas"></p>
+
+    <p>Informe o preço do brinquedo de meninos
+        <input type="text" id="brinquedo_menino" onkeyup="ver_presentes()"></p>
+
+
+    <p>Informe o preço do brinquedo de meninas
+        <input type="text" id="brinquedo_menina" onkeyup="ver_presentes()"></p>
+
+    <p><button onclick="ver_presentes()">Brincadeira de Criança</button></p>
+
+    <div id="mensagem"></div>
+</body>
+
+</html>
+
+
+<script>
+    function ver_presentes() {
+
+        var qtd_meninos = Number(meninos.value);
+        var qtd_meninas = Number(meninas.value);
+        var preco_brinquedo_menino = Number(brinquedo_menino.value);
+        var preco_brinquedo_menina = Number(brinquedo_menina.value);
+        var contador=1;
+        
+
+if(qtd_meninos>=0 && qtd_meninas >=0){
+    mensagem.innerHTML=`1º menino ganhando um X`;
+    contador++
+
+}else{mensagem.innerHTML=`Onde já se viu quantidade negativa de crianças?!`}
+    }
+</script>

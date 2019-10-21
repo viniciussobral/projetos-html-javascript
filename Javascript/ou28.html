@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <h2>Calculadora de cansaço do aluno Bandtec</h2>
+
+    <p>
+        <select id="transportes">
+            <option>- Meio de transporte - </option>
+            <option value="1"> Ônibus</option>
+            <option value="2">Metrô</option>
+            <option value="3">Carro</option>
+            <option value="4">Bicicleta</option>
+            <option value="5">Lotação</option>
+        </select>
+    </p>
+
+    <p>
+        Informe a distância de sua casa até a faculdade <input type="text" id="km"> "Distância da faculdade (KM)"
+    </p>
+    <button onclick="ver()">Calcular cansaço</button>
+
+
+
+</body>
+
+</html>
+
+<script>
+
+    function ver() {
+
+        var valor_transportes = Number(transportes.value);
+        var valor_km = Number(km.value);
+
+        if (valor_km <= 10) {
+
+            if (valor_transportes == 1 || valor_transportes == 2 || valor_transportes == 3) {
+
+                alert(`Tá tranks...`);
+
+            }else {
+
+                alert(`É ... um pouco cansado ...`);
+            }
+
+        }
+
+        if (valor_km > 10) {
+
+            if (valor_transportes == 3) {
+
+                alert(`É ... um pouco cansado ...`);
+            }
+
+            if (valor_transportes == 1 || valor_transportes == 2 || valor_transportes == 5) {
+
+                alert(`Bem cansado ...`);
+            }
+
+            if (valor_transportes == 4) {
+
+                alert(`Vish ... ta só o pó ...`);
+            }
+
+
+
+        }
+
+
+
+
+    }
+
+
+
+
+
+
+</script>

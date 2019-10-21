@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exe 10 and 11</title>
+</head>
+
+<body>
+
+    <p>Informe a quantidade de Onibus que você ultiliza: <input type="text" id="onibus"></p>
+    <p>Informe a quantidade de Trens que você ultiliza: <input type="text" id="trem"></p>
+    <p>Informe a quantidade de Metrô que você ultiliza: <input type="text" id="metro"></p>
+    <button onclick="ver_trajeto()">#Partiu Trajeto</button>
+    <br><br>
+    <div id="msn1"></div>
+    <br><br>
+    <div id="msn2"></div>
+    <br><br>
+    <div id="msn3"></div>
+    <br><br>
+
+
+
+
+</body>
+
+</html>
+
+<script>
+
+    function ver_trajeto() {
+
+        var valor_onibus = Number(onibus.value);
+        var valor_trem = Number(trem.value);
+        var valor_metro = Number(metro.value);
+        var contador1 = 1;
+        var contador2 = 1;
+        var contador3 = 1;
+        msn1.innerHTML = "";
+        msn2.innerHTML = "";
+        msn3.innerHTML = "";
+
+        while (contador1 <= valor_onibus) {
+
+            msn1.innerHTML += `<span style="color: red;"> Pegando o ${contador1}º buzão </span>`;
+          
+
+            if (contador1 == 2) {
+
+                msn1.innerHTML += ` <span style="color: red;">, Começando a cansar </span> `;
+
+
+            }
+            if (contador1 > 2) {
+
+                msn1.innerHTML += ` <span style="color: red;">, Já cansado! </span> `;
+
+
+            }
+
+            msn1.innerHTML += `<br>`;
+            contador1++;
+
+
+        }
+        while (contador2 <= valor_trem) {
+
+            msn2.innerHTML += `<span style="color: green;"> Pegando o ${contador2}º Trem </span>`;
+
+            if(contador2 ==2){
+
+                msn2.innerHTML += ` <span style="color: green;">, Começando a cansar </span> `;
+
+            }
+            if(contador2 > 2){
+
+                msn2.innerHTML += ` <span style="color: green;">, Já cansado! </span> `;
+
+
+            }
+
+
+            msn2.innerHTML += `<br>`;
+            contador2++;
+
+
+        }
+        while (contador3 <= valor_metro) {
+
+            msn3.innerHTML += `<span style="color: blue;">Pegando o ${contador3}º Metrô</span>`;
+
+            if(contador3 == 2){
+
+                msn3.innerHTML += `<span style="color: blue;">, Começando a cansar </span>`;
+
+
+            }
+            if(contador3 > 2){
+
+
+                msn3.innerHTML += `<span style="color: blue;">, Já cansado! </span>`;
+
+            }
+
+            msn3.innerHTML += `<br>`;
+            contador3++;
+
+
+        }
+
+
+
+
+
+    }
+
+
+</script>

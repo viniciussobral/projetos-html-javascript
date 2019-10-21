@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Operações Matematicas</title>
+</head>
+<body>
+    <h2>Soma dos números</h2>
+
+   <p>Informe o primeiro número:
+    <input id="n1"></p> 
+
+   <p>Informe o segundo número:
+    <input id="n2"></p> 
+
+   <p><button onclick="op_numeros()">Operações matematicas</button></p>
+   <p><button onclick="limpar()">Limpar os campos</button></p> 
+
+
+</body>
+</html>
+
+
+<script>
+function op_numeros(){
+
+   var soma = parseInt(n1.value) + parseInt(n2.value); 
+   var sub = n1.value - n2.value;
+   var divi = n1.value / n2.value;
+   var mult = n1.value * n2.value;
+
+   alert ('Operações matematicas');
+   alert(`A soma dos números é = ${soma} . A Subtração dos números é = ${sub} . A divisão dos números é = ${divi} . A multiplicação dos números é = ${mult} `);
+
+}
+
+function limpar(){
+if(document.getElementById('n1').value!=""){
+   (document.getElementById('n1').value="");
+   (document.getElementById('n2').value="");
+
+
+ }
+
+}
+
+</script>

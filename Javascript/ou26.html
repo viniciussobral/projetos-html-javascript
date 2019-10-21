@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <h2>Calculadora de cansaço do aluno Bandtec</h2>
+
+    <p>
+        <select id="transportes">
+            <option>- Meio de transporte - </option>
+            <option value="1"> Ônibus</option>
+            <option value="2">Metrô</option>
+            <option value="3">Carro</option>
+            <option value="4">Bicicleta</option>
+            <option value="5">Lotação</option>
+        </select>
+    </p>
+
+    <button onclick="ver()">Calcular cansaço</button>
+
+
+
+
+</body>
+
+</html>
+
+<script>
+
+    function ver() {
+
+        if (transportes.value == 3 || transportes.value == 4) {
+
+            alert(`Tá tranquilo ...`);
+
+
+        }
+
+        if (transportes.value == 2) {
+
+            alert(`Um pouco cansado`);
+
+
+        }
+        if (transportes.value == 1 || transportes.value == 5) {
+
+            alert(`Vish ... vive cansado.`);
+
+
+        }
+
+
+    }
+
+
+
+
+</script>

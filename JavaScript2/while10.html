@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <p>Informe quantos ônibus você precisa pegar: <input type="text" id="onibus"></p>
+    <p>Informe quantos trens você precisa pegar: <input type="text" id="trem"></p>
+    <p>Informe quantos metrôs você precisa pegar: <input type="text" id="metro"></p>
+
+    <button onclick="ver_transporte()">#Partiu Trajeto</button>
+
+    <div id="msn1"></div>
+    <br>
+    <div id="msn2"></div>
+    <br>
+    <div id="msn3"></div>
+
+
+
+
+</body>
+
+</html>
+
+<script>
+
+    function ver_transporte() {
+
+        var contador_onibus = 1;
+        var contador_trem = 1;
+        var contador_metro = 1;
+        var qtd_onibus = Number(onibus.value);
+        var qtd_trens = Number(trem.value);
+        var qtd_metros = Number(metro.value);
+
+        while (contador_onibus <= qtd_onibus) {
+
+
+
+            if (contador_onibus >= 2) {
+
+                msn1.innerHTML += ` <b>Começando a cansar</b> <br>`;
+                contador_onibus++;
+
+
+            }
+            else {
+
+                msn1.innerHTML += ` <span style="color: red">  Pegando o ${contador_onibus}º buzão </span> <br>`;
+                contador_onibus++;
+
+
+            }
+
+
+        }
+
+        while (contador_trem <= qtd_trens) {
+
+            msn2.innerHTML += ` <span style="color: green">  Pegando o ${contador_trem}º Trem </span> <br>`;
+            contador_trem++;
+
+
+        }
+
+        while (contador_metro <= qtd_metros) {
+
+            msn3.innerHTML += ` <span style="color: blue">  Pegando o ${contador_metro}º Metro </span> <br>`;
+            contador_metro++;
+
+
+        }
+
+
+
+
+
+    }
+
+
+
+</script>

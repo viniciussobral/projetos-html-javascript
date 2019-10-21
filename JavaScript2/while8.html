@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <p>Informe quantas corridas você deseja realizar: <input type="text" id="corrida"></p>
+
+    <button onclick="ver_corridas()">Iniciar Corrida</button>
+    <br>
+
+    <b id="msn"></b>
+
+
+</body>
+
+</html>
+
+<script>
+
+    function ver_corridas() {
+
+        var valor_corridas = Number(corrida.value);
+        var contador = 1;
+        msn.innerHTML = '';
+
+
+
+     
+
+            while (contador <= valor_corridas) {
+
+                msn.innerHTML += `Carro dando a ${contador}ª volta! <br>`;
+                contador++;
+
+            }
+         
+
+                msn.innerHTML += `Corrida Finalizada!!!`;
+
+         
+
+
+
+      
+
+
+    }
+
+
+
+
+
+
+
+
+</script>

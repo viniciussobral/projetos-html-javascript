@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Altura e Largura</title>
+</head>
+<body>
+    <h2>Altura e Largura</h2>
+
+    <button onclick="aumentar()">Aumentar</button>
+    <button onclick="diminuir()">Diminuir</button>
+    <br>
+    <img id="foto" src="logo.png" style="width: 205px">
+
+    <div style="display: none">
+        <span id="largura">205</span>
+        <span id="altura">205</span>
+    </div>
+
+    <br>
+</body>
+</html>
+<script>
+    
+function aumentar() {
+    // recuperando a largura escondida
+    var largura_atual = Number(largura.innerHTML);
+
+    // aumentando o valor em 10
+    largura_atual += 10;
+
+    // jogando no lugar escondido a nova largura
+    largura.innerHTML = largura_atual;
+
+    // trocando a largura do estilo da foto
+    foto.style.width = `${largura_atual}px`;    
+}
+
+function diminuir() {
+    // recuperando a altura escondida
+    var altura_atual = Number(altura.innerHTML);
+
+    // aumentando o valor em 10
+    altura_atual -= 10;
+
+    // jogando no lugar escondido a nova altura
+    altura.innerHTML = altura_atual;
+
+    // trocando a altura do estilo da foto
+    foto.style.height = `${altura_atual}px`;    
+}
+
+</script>
+
